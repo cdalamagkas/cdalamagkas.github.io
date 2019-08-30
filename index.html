@@ -84,7 +84,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<li><a data-toggle="tab" href="#skills">Skills</a></li>
 		<li><a data-toggle="tab" href="#exp">Experience</a></li>
 		<li><a data-toggle="tab" href="#tools">Projects/Publications</a></li>
-		<li><a data-toggle="tab" href="#contact">Contact</a></li>
 	</ul>
 	
 	<div class="tab-content">
@@ -99,6 +98,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<p>You can navigate through the tabs to learn more about me. Also you can view and download my CV (English and Greek):</p>
 				<p>[EN]: <a href="/cv.pdf" class="btn-social btn-outline" style="float:none;" target="_blank"><span class="sr-only">CV</span><i class="fa fa-fw fa-file-pdf-o" ></i></a></p>
 				<p>[GR]: <a href="/cv-gr.pdf" class="btn-social btn-outline" style="float:none;" target="_blank"><span class="sr-only">CV</span><i class="fa fa-fw fa-file-pdf-o" ></i></a></p>
+			</div>
+			<div class="col-sm-6">
+				<h4>Contact details</h4>
+				<table class="table table-hover">
+				<tbody>
+					<tr>
+						<td><b>Email</b></td>
+						<td>
+							<span id="email-js"> </span>
+							<noscript>
+								<em>Email address protected by JavaScript.<BR>
+								Please enable JavaScript to contact me.</em>
+							</noscript>
+						</td>
+					</tr>
+					<tr>
+						<td><b>Skype</b></td>
+						<td><a href="skype:chris.dal?chat">chris.dal</a></td>
+					</tr>
+					<tr>
+						<td><b>Linkedin</b></td>
+						<td><a href="https://www.linkedin.com/in/cdalamagkas" target="_blank">linkedin.com/in/cdalamagkas</a></td>
+					</tr>
+					
+					<tr>
+						<td><b>Telephone/Viber</b></td>
+						<td>+30 698 316 0295</td>
+					</tr>
+				</tbody>
+				</table>
 			</div>
 		</div>	
 		</div>
@@ -190,92 +219,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<div class="list-group">
 				<a href="https://doi.org/10.1016/j.osn.2017.12.004" target="_blank" class="list-group-item">[1] C. Dalamagkas, P. Sarigiannidis, S. Kapetanakis and I. Moscholios, "Dynamic scheduling in TWDM-PONs using game theory", <i>Optical Switching and Networking</i>, Dec. 2017, DOI: 10.1016/j.osn.2017.12.004</a>
 				<a href="https://doi.org/10.1109/CSNDSP.2018.8471787" target="_blank" class="list-group-item">[2] C. Dalamagkas, P. Sarigiannidis, I. Moscholios, T. Lagkas and M.S. Obaidat, "PAS: A Fair Game-Driven DBA Scheme for XG-PON Systems", <i>11th International Symposium on Communication Systems, Networks, and Digital Signal Processing</i>, Jul. 2018. DOI: 10.1109/CSNDSP.2018.8471787</a>
-
 			</div>
-		</div>
-		<div id="contact" class="tab-pane fade">
-		<div class="row">
-			<div class="col-sm-6">
-				<h4>Contact details</h4>
-				<table class="table table-hover">
-				<tbody>
-					<tr>
-						<td><b>Email</b></td>
-						<td>
-							<span id="email-js"> </span>
-							<noscript>
-								<em>Email address protected by JavaScript.<BR>
-								Please enable JavaScript to contact me.</em>
-							</noscript>
-						</td>
-					</tr>
-					<tr>
-						<td><b>Skype</b></td>
-						<td><a href="skype:chris.dal?chat">chris.dal</a></td>
-					</tr>
-					<tr>
-						<td><b>Linkedin</b></td>
-						<td><a href="https://www.linkedin.com/in/cdalamagkas" target="_blank">linkedin.com/in/cdalamagkas</a></td>
-					</tr>
-					
-					<tr>
-						<td><b>Telephone/Viber</b></td>
-						<td>+30 698 316 0295</td>
-					</tr>
-				</tbody>
-				</table>
-			</div>
-			<div class="col-sm-6">
-				<h4>Feel free to send me a message through the contact form below: </h4>
-				<form id="contactForm" class="form-horizontal" novalidate>
-					<div class="form-group">
-						<label class="control-label col-sm-3" for="name">Name<b><span class="red">*</span></b></label>
-						<div class="col-sm-9">
-						<input class="form-control" type="text" id="name" name="name" placeholder="Your full name.." />
-						</div>
-					</div>
-					<div id="email-div" class="form-group">
-						<label class="control-label col-sm-3" for="email">Email<b><span class="red">*</span></b></label>
-						<div class="col-sm-9"> 
-						<input class="form-control" type="email" id="email" name="email" placeholder="Your email address.." onkeyup="checkEmail()">
-						<span id="email-span"></span>
-						</div>
-					</div>
-					<div class="form-group">
-						<label class="control-label col-sm-3" for="subject">Subject</label>
-						<div class="col-sm-9"> 
-						<input class="form-control" type="text" id="subject" name="subject" placeholder="The subject of your message (optional)..">
-						</div>
-					</div>
-					<div class="form-group">
-						<label class="control-label col-sm-3" for="message">Message<b><span class="red">*</span></b></label>
-						<div class="col-sm-9"> 
-						<textarea class="form-control" id="message" name="message" placeholder="Write your message.." style="height:200px"></textarea>
-						</div>
-					</div>
-					<div id="captcha-div" class="form-group">
-						<label class="control-label col-sm-3" for="captcha"><span data-toggle="tooltip" data-placement="auto" title="Confirm you are a human being"><i class="fa fa-info-circle" aria-hidden="true"></i> Validation<b><span class="red">*</span></b></span></label>
-						<div class="col-sm-9"> 
-						<input class="form-control" type="number" id="captcha" name="captcha" onkeyup="checkCaptcha()"/>
-						<span id="captcha-span"></span>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="col-sm-8 col-sm-offset-3">
-							<input type="button" value="Submit" id="submit" name="submit" onclick="sendMessage()" class="btn btn-default"/>
-							<input type="button" class="btn btn-default" style="float:right" onclick="resetForm()" value="Reset"/>
-						</div>
-					</div>
-				</form>
-			</div>
-		</div>			
 		</div>
 	</div>
 </div>
 
 <footer class="footer">
 	<div class="container center">
-		<p class="text-muted">Copyright &copy; 2017-<script type="text/javascript"> document.write(new Date().getFullYear());</script> &nbsp; by Christos Dalamagkas | hosted by <a href="https://www.ovh.com/" target=_blank>ovh</a></p>
+		<p class="text-muted">Copyright &copy; 2017-<script type="text/javascript"> document.write(new Date().getFullYear());</script> &nbsp; by Christos Dalamagkas</p>
 		<a href="skype:chris.dal?chat" class="btn-social btn-outline"><span class="sr-only">Skype</span><i class="fa fa-fw fa-skype"></i></a>
 		<a href="https://www.linkedin.com/in/cdalamagkas" class="btn-social btn-outline" target="_blank" ><span class="sr-only">Linkedin</span><i class="fa fa-fw fa-linkedin"></i></a>
 		<a href="https://github.com/cdalamagkas/" class="btn-social btn-outline" target="_blank"> <span class="sr-only">GitHub</span><i class="fa fa-github" aria-hidden="true"></i></a>
