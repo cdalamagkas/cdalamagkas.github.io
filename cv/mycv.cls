@@ -21,6 +21,7 @@
 \setlength{\parindent}{0pt}
 \RequirePackage{array}
 \RequirePackage{etoolbox}
+\graphicspath{{assets/}}
 
 \newenvironment{Itemize}{\begin{itemize}\setlength\itemsep{0cm}}{\end{itemize}}
 

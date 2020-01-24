@@ -21,6 +21,7 @@
 \setlength{\parindent}{0pt}
 \RequirePackage{array}
 \RequirePackage{etoolbox}
+\graphicspath{{assets/}}
 
 %%%%% LANGUAGE AND FONTS 
 \RequirePackage{xltxtra,xgreek,fontspec}
