@@ -1,0 +1,63 @@
+# section information
+section:
+  name: Experiences
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true 
+
+# Your experiences
+experiences:
+- company:
+    name: Public Power Corporation S.A.
+    url: "https://www.dei.gr"
+    location: Testing, Research and Standards Centre, Athens, Greece
+    # company overview
+    overview: PPC is the largest energy producer and energy retailer in Greece.
+  positions:
+  - designation: Contractor / Researcher
+    start: May 2018
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    # end: Dec 2020
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - Leading Researcher on Horizon 2020 programmes ([SPEAR](https://www.spear2020.eu), [SDN-microSENSE](https://www.sdnmicrosense.eu), [TERMINET](https://www.terminet-h2020.eu), ELECTRON, [EVIDENT](https://www.evident-h2020.eu))
+    - Security and privacy on smart grids, SDN technologies on smart grids, cybersecurity, next-generation IoT, multi-access edge computing.
+    - Leader of dissemination activities (SPEAR), end-user for IoT and cybersecurity platforms (SPEAR, SDN-microSENSE, TERMINET, EVIDENT, ELECTRON).
+    - Design, implementation, and administration of custom virtualized and SDN-enabled infrastructure.
+    - ICT infrastructure documentation.
+    - Deployment and configuration of industrial networks (SCADA, PLC, power meters, Modbus TCP/IP)
+    - Software Development
+
+- company:
+    name: University of Western Macedonia
+    url: "https://ithaca.ece.uowm.com"
+    location: Kozani, Greece
+  positions:
+  - designation: External Collaborator / Research Assistant
+    start: May 2018
+    responsibilities:
+    - Research and management for H2020 projects (SPEAR, SDN-microSENSE, TERMINET)
+    - Contribution for the preparation of successful H2020 proposals (TERMINET, ELECTRON)
+    - Contribution to deliverables
+    - Software Development
+
+- company:
+    name: IEK ALFA (IEK ΑΛΦΑ)
+    url: "https://www.iekalfa.gr"
+    location: Athens, Greece
+    overview: IEK ALFA is a vocational school in Greece. 
+  positions:
+  - designation: Teacher
+    start: May 2018
+    responsibilities:
+    - Computer Networks
+    - Network Security
+    - Mobile networks
+    - Operating Systems
+    - Data Communications
+    - Network Administration
+    - Object-oriented Programming (C++)
+    - Telecommunications

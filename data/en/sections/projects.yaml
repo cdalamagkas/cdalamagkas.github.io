@@ -1,0 +1,86 @@
+# section information
+section:
+  name: Projects and Publications
+  id: projects
+  enable: true
+  weight: 4
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# filter buttons
+buttons:
+- name: All
+  filter: "all"
+- name: Professional
+  filter: "professional"
+- name: Academic
+  filter: "academic"
+- name: Hobby
+  filter: "hobby"
+
+# your projects
+projects:
+- name: SDN Dashboard
+  logo: /images/sdndashboard.png
+  role: Leading Developer
+  timeline: "Jul 2020 - Present"
+  #  repo: https://github.com/kubernetes/kubernetes # If your project is a public repo on GitHub, then provide this link. it will show star count.
+  #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+  summary: An innovative Django-based dashboard that provides a user-friendly interface to retrieve, monitor and edit network flows from SDN switches as well as to view the network topology in real time.
+  tags: ["professional"]
+
+- name: Lectures for the University of Western Macedonia 
+  logo: /images/dna.png
+  role: Author
+  timeline: "2020 - 2021"
+  summary: +++.
+  tags: ["professional"]
+
+
+- name: Network Design ciriculim 
+  logo: /images/dna.png
+  role: Author
+  timeline: "Sep 2016 - Dec 2016"
+  summary: Author of original educational material and laboratory exercises for the course "Network Design" that involves routing and switching on Cisco and Mikrotik devices (To be uploaded soon).
+  tags: ["professional"]
+
+- name: NeighborJoining App
+  logo: /images/dna.png
+  role: Developer
+  timeline: "Sep 2016 - Dec 2016"
+  summary: Java app that aligns multiple DNA sequences (using the Needleman-Wunsch algorithm) and creates their phylogenetic tree, using the Neighbor-Joining algorithm. Fully functional Swing GUI included.
+  tags: ["hobby"]
+
+- name: Dynamic scheduling in TWDM-PONs using game theory
+  role: Author
+  timeline: "2018"
+  url: "https://doi.org/10.1016/j.osn.2017.12.004"
+  repo: https://github.com/cdalamagkas/ngpon2
+  summary:  C. Dalamagkas, P. Sarigiannidis, S. Kapetanakis and I. Moscholios, "Dynamic scheduling in TWDM-PONs using game theory", Optical Switching and Networking, Dec. 2017, DOI:10.1016/j.osn.2017.12.004.
+  tags: ["academic"]
+
+- name: "PAS: A Fair Game-Driven DBA Scheme for XG-PON Systems"
+  logo: /images/sections/projects/toha.png
+  role: Author
+  timeline: "2018"
+  url: "https://doi.org/10.1109/CSNDSP.2018.8471787"
+  repo: "https://github.com/cdalamagkas/XGPON_Simulator"
+  summary: 'C. Dalamagkas, P. Sarigiannidis, I. Moscholios, T. Lagkas and M.S. Obaidat, "PAS: A Fair Game-Driven DBA Scheme for XG-PON Systems", 11th International Symposium on Communication Systems, Networks, and Digital Signal Processing, Jul. 2018, 10.1109/CSNDSP.2018.8471787'
+  tags: ["academic"]
+
+- name: A Survey On Honeypots, Honeynets And Their Applications On Smart Grid
+  logo: /images/sections/projects/toha.png
+  role: Author
+  timeline: "2019"
+  url: http://dx.doi.org/10.1109/NETSOFT.2019.8806693
+  summary: 'C. Dalamagkas et al., A Survey On Honeypots, Honeynets And Their Applications On Smart Grid," in 2019 IEEE Conference on Network Softwarization (NetSoft), 2019. DOI: 10.1109/NETSOFT.2019.8806693.'
+  tags: ["academic"]
+
+- name: Game Theoretic Honeypot Deployment in Smart Grid
+  logo: /images/sections/projects/toha.png
+  role: Author
+  timeline: "2020"
+  url: http://dx.doi.org/10.3390/s20154199
+  summary: 'P. Diamantoulakis, C. Dalamagkas, P. Radoglou-Grammatikis, P. Sarigiannidis, and G. Karagiannidis, "Game Theoretic Honeypot Deployment in Smart Grid," Sensors, vol. 20, no. 15, p. 4199, Jul. 2020. DOI: 10.3390/s20154199.'
+  tags: ["academic"]

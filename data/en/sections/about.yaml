@@ -1,0 +1,53 @@
+# section information
+section:
+  name: About
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/about.html
+
+# your designation
+designation: Freelance Researcher
+# your company information
+#company:
+#  name: Freelance Researcher.
+#  url: "https://www.example.com"
+
+# your resume. this file path should be relative to you "static" directory
+resume: "cv.pdf"
+
+# a summary about you
+summary: 'I am a researcher and developer with 2 years of experience in 5 Horizon 2020 research programes and 1 national-funded program.'
+
+# your social links
+# give as many as you want. use font-awesome for the icons.
+socialLinks:
+- name: Github
+  icon: "fab fa-github"
+  url: "https://github.com/cdalamagkas"
+
+- name: LinkedIn
+  icon: "fab fa-linkedin"
+  url: "https://www.linkedin.com/in/cdalamagkas"
+
+- name: Skype
+  icon: "fab fa-skype"
+  url: "skype:chat?chris.dal"
+
+# your soft skills
+# give the percentage between 50 to 100 with 5 intervals.
+# currently supported colors: blue, yellow, pink, green, sky, orange
+softSkills:
+- name: Management
+  percentage: 85
+  color: blue
+- name: Team Work
+  percentage: 90
+  color: yellow
+- name: Hard Working
+  percentage: 80
+  color: green
+- name: Problem Solving
+  percentage: 90
+  color: pink

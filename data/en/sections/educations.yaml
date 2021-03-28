@@ -1,0 +1,53 @@
+# section information
+section:
+  name: Education
+  id: education
+  template: sections/education.html # Use "sections/education-alt.html for alternate template.
+  enable: true
+  weight: 4
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+degrees:
+#- name: Integrated Master Degree (MSci) in Informatics and Telecommmunications Engineering
+#  icon: fa-microscope
+#  timeframe: 2016-2020
+#  institution:
+#    name: ABC University of Technology
+#    url: "#"
+#  grade: #(optional)
+#    scale: CGPA
+#    achieved: 3.6
+#    outOf: 4
+#  publications: #(optional)
+#  - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+#    url: "#"
+#  - title: Fusce eu augue ut odio porttitor pulvinar.
+#    url: "#"
+#  - title: Nullam vitae orci tincidunt purus viverra pulvinar.
+#    url: "#"
+- name: Cisco Certified Network Associate (CCNA)
+  icon: fa-graduation-cap
+  timeframe: 2017-2018
+  institution:
+    name: Cisco Networking Academy
+    url: "https://www.netacad.com"
+  grade: #(optional)
+    scale: CGPA
+    achieved: 92
+    outOf: 100
+    
+- name: MSci. in Informatics and Telecommmunications Engineering
+  icon: fa-graduation-cap
+  timeframe: 2012-2017
+  institution:
+    name: University of Western Macedonia
+    url: "https://ece.uowm.gr"
+  grade: #(optional)
+    scale: CGPA
+    achieved: 8.2
+    outOf: 10
+  extracurricularActivities: #(optional)
+  - Teching Fellow for Computer Networks, Computer and Network Security, Network Design, Event-driven simulation.
+  - Video editing for the course "Parallel and Distributed Systems" using MeGU and Sony Vegas Pro.
