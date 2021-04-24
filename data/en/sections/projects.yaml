@@ -34,15 +34,23 @@ projects:
   logo: /images/dna.png
   role: Author
   timeline: "2020 - 2021"
-  summary: +++.
+  summary: Lectures on SDN/NFV, game theory and smart grids, delivered for the University of Western Macedonia.
+  url: https://github.com/cdalamagkas/iot-lectures
   tags: ["professional"]
 
+- name: Lectures on Computer Science for Vacational Schools
+  role: Author
+  timeline: "2018-2019"
+  summary: Lectures on Computer Networks, Cybersecurity, Operating System, Data Communications, Mobile Networks and Telecommunications for Vocational schools. Delivered successfully at IIEK ALFA.
+  url: https://github.com/cdalamagkas/cs-lectures-gr
+  tags: ["professional"]
 
 - name: Network Design ciriculim 
   logo: /images/dna.png
   role: Author
   timeline: "Sep 2016 - Dec 2016"
-  summary: Author of original educational material and laboratory exercises for the course "Network Design" that involves routing and switching on Cisco and Mikrotik devices (To be uploaded soon).
+  summary: Author of original educational material and laboratory exercises for the course "Network Design" that involves routing and switching on Cisco and Mikrotik devices.
+  url: https://github.com/cdalamagkas/network-design-labs
   tags: ["professional"]
 
 - name: NeighborJoining App

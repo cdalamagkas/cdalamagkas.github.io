@@ -14,7 +14,6 @@ skills:
 - name: Computer Networking and SDN
   icon: "/images/sections/skills/kubernetes.png"
   summary: "Certified under the CCNA programme (2019). Cisco IOS, ArubaOS-Switch, OpenFlow 1.3, "
-  url: "https://kubernetes.io/"
 
 - name: Python
   icon: "/images/sections/skills/cloud.png"
