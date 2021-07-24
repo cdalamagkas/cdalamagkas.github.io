@@ -15,7 +15,7 @@ designation: Freelance Researcher
 #  url: "https://www.example.com"
 
 # your resume. this file path should be relative to you "static" directory
-resume: "cv.pdf"
+resume: "cv.html"
 
 # a summary about you
 summary: 'I am a researcher and developer with 2 years of experience in 5 Horizon 2020 research programes and 1 national-funded program.'
