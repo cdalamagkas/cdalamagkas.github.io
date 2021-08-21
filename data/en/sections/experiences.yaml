@@ -13,7 +13,7 @@ experiences:
 - company:
     name: Public Power Corporation S.A.
     url: "https://www.dei.gr"
-    location: Testing, Research and Standards Centre, Athens, Greece
+    location: PPC Innovation Hub, Athens, Greece
     # company overview
     overview: PPC is the largest energy producer and energy retailer in Greece.
   positions:
@@ -25,11 +25,12 @@ experiences:
     responsibilities:
     - Researcher for European research programmes ([SPEAR H2020](https://www.spear2020.eu), [SDN-microSENSE H2020](https://www.sdnmicrosense.eu), [TERMINET H2020](https://www.terminet-h2020.eu), ELECTRON H2020, [EVIDENT H2020](https://www.evident-h2020.eu), [Jaunty Erasmus+](https://www.jaunty.eu))
     - Security and privacy on smart grids, SDN technologies on smart grids, cybersecurity, next-generation IoT.
-    - Leader of dissemination activities (SPEAR), end-user for IoT and cybersecurity platforms (SPEAR, SDN-microSENSE, TERMINET, EVIDENT, ELECTRON).
-    - Design, implementation, and administration of custom virtualized and SDN-enabled infrastructure.
+    - Proposal writing in the IoT and cybersecurity domains ([TERMINET H2020](https://www.terminet-h2020.eu), ELECTRON H2020, [Jaunty Erasmus+](https://www.jaunty.eu)).
+    - Design, implementation, and administration of virtualized and SDN-enabled infrastructure.
     - ICT infrastructure documentation.
-    - Deployment and configuration of industrial networks (SCADA, PLC, smart meters)
-    - Software Development
+    - Design, deployment and configuration of industrial networks (SCADA, PLC, smart meters).
+    - Software development.
+    - Project management.
 
 - company:
     name: University of Western Macedonia
@@ -39,10 +40,9 @@ experiences:
   - designation: External Collaborator / Research Assistant
     start: May 2018
     responsibilities:
-    - Research and management for H2020 projects (SPEAR, SDN-microSENSE, TERMINET)
-    - Contribution for the preparation of successful H2020 proposals (TERMINET, ELECTRON)
-    - Contribution to deliverables
-    - Software Development
+    - Research assistance and management for European research programmes.
+    - Proposal writing for H2020 and Erasmus+ proposals ([TERMINET H2020](https://www.terminet-h2020.eu), ELECTRON H2020, [Jaunty Erasmus+](https://www.jaunty.eu)).
+    - Software development.
 
 - company:
     name: IEK ALFA (IEK ΑΛΦΑ)

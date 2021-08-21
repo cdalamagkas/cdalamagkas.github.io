@@ -7,12 +7,12 @@ greeting: "Hi, I am"
 #image: "images/author/john.png"
 # give your some contact information. they will be used in the footer
 contactInfo:
-  email: "cdalamagkas@gmail.com"
-  phone: "+306983160295"
+  email: "me@christos.pw"
+  phone: "+30 6983160295"
 
 # some summary about what you do
 summary:
   - I am a Freelance Researcher
   - I am a Developer
-  - I love computer networks
-  - I work on Horizon 2020 research programes
+  - I love Computer Networks
+  - I work on EU Horizon research programes
