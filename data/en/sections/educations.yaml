@@ -38,7 +38,7 @@ degrees:
     achieved: 92
     outOf: 100
     
-- name: B.Eng. in Informatics and Telecommmunications Engineering
+- name: B.Eng. in Informatics and Telecommunications Engineering
   icon: fa-graduation-cap
   timeframe: 2012-2017
   institution:
@@ -48,6 +48,9 @@ degrees:
     scale: CGPA
     achieved: 8.2
     outOf: 10
+  publications:
+  - title: Thesis titled "Design of Market Mechanism for Dynamic Bandwidth Allocation on XG-PON"
+    url: "https://christos.pw/thesis.pdf"
   extracurricularActivities: #(optional)
   - Teching Fellow for Computer Networks, Computer and Network Security, Network Design, Event-driven simulation.
-  - Video editing for the course "Parallel and Distributed Systems" using MeGU and Sony Vegas Pro.
+  - Video editing for the course "Parallel and Distributed Systems" using MeGUI and Sony Vegas Pro.
