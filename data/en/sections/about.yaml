@@ -35,19 +35,9 @@ socialLinks:
   icon: "fab fa-skype"
   url: "skype:chat?chris.dal"
 
-# your soft skills
-# give the percentage between 50 to 100 with 5 intervals.
-# currently supported colors: blue, yellow, pink, green, sky, orange
-softSkills:
-- name: Management
-  percentage: 85
-  color: blue
-- name: Team Work
-  percentage: 90
-  color: yellow
-- name: Hard Working
-  percentage: 80
-  color: green
-- name: Problem Solving
-  percentage: 90
-  color: pink
+
+badges:
+- type: certification
+  name: CCNA
+  url: "https://www.credly.com/earner/earned/badge/8beac281-7eff-45c3-a1bf-b3eeb4699ca3"
+  badge: "https://images.credly.com/size/340x340/images/683783d8-eaac-4c37-a14d-11bd8a36321d/ccna_600.png"

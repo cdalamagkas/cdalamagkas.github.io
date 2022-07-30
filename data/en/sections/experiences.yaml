@@ -23,12 +23,12 @@ experiences:
     # end: Dec 2020
     # give some points about what was your responsibilities at the company.
     responsibilities:
-    - Researcher for European research programmes ([SPEAR H2020](https://www.spear2020.eu), [SDN-microSENSE H2020](https://www.sdnmicrosense.eu), [TERMINET H2020](https://www.terminet-h2020.eu), ELECTRON H2020, [EVIDENT H2020](https://www.evident-h2020.eu), [Jaunty Erasmus+](https://www.jaunty.eu))
+    - Researcher for European research programmes ([SPEAR H2020](https://www.spear2020.eu), [SDN-microSENSE H2020](https://www.sdnmicrosense.eu), [TERMINET H2020](https://www.terminet-h2020.eu), [ELECTRON H2020](https://www.electron-project.eu), [EVIDENT H2020](https://www.evident-h2020.eu), [Jaunty Erasmus+](https://www.jaunty.eu))
     - Security and privacy on smart grids, SDN technologies on smart grids, cybersecurity, next-generation IoT.
-    - Proposal writing in the IoT and cybersecurity domains ([TERMINET H2020](https://www.terminet-h2020.eu), ELECTRON H2020, [Jaunty Erasmus+](https://www.jaunty.eu)).
+    - Proposal writing in the IoT and cybersecurity domains ([TERMINET H2020](https://www.terminet-h2020.eu), [ELECTRON H2020](https://www.electron-project.eu), [Jaunty Erasmus+](https://www.jaunty.eu)).
     - Design, implementation, and administration of virtualized and SDN-enabled infrastructure.
     - ICT infrastructure documentation.
-    - Design, deployment and configuration of industrial networks (SCADA, PLC, smart meters).
+    - Design, deployment and configuration of industrial networks (SCADA, PLCs, smart meters, EV chargers).
     - Software development.
     - Project management.
 
@@ -41,7 +41,7 @@ experiences:
     start: May 2018
     responsibilities:
     - Research assistance and management for European research programmes.
-    - Proposal writing for H2020 and Erasmus+ proposals ([TERMINET H2020](https://www.terminet-h2020.eu), ELECTRON H2020, [Jaunty Erasmus+](https://www.jaunty.eu)).
+    - Proposal writing for H2020 and Erasmus+ proposals ([TERMINET H2020](https://www.terminet-h2020.eu), [ELECTRON H2020](https://www.electron-project.eu), [Jaunty Erasmus+](https://www.jaunty.eu)).
     - Software development.
 
 - company:
@@ -55,9 +55,9 @@ experiences:
     responsibilities:
     - Computer Networks
     - Network Security
-    - Mobile networks
+    - Mobile Networks
     - Operating Systems
     - Data Communications
     - Network Administration
-    - Object-oriented Programming (C++)
+    - Object-Oriented Programming (C++)
     - Telecommunications
