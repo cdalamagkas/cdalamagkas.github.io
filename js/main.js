@@ -72,6 +72,16 @@ var isMobile = false, isTablet = false, isLaptop = false;
     }
     addSmoothScroll();
 
+    // ===================== Video Player ==================
+    function renderVideoPlayer(){
+      var videos = document.getElementsByClassName("video-player");
+      for (var i =0; i< videos.length; i++ ){
+        const player = new Plyr("#"+videos[i].id);
+      }
+
+    }
+    renderVideoPlayer();
+
     // re-render custom functions on window resize
     window.onresize = function () {
       detectDevice();
@@ -148,18 +158,16 @@ function toggleCourseVisibility(elem) {
   }
 
   // toggle hidden-course class from the third elements
-  for (var i = 0; i < courses.length; i++) {
-    if (i > 1 && courses[i].classList !== null) {
-      courses[i].classList.toggle("hidden-course");
+  for (const course of courses) {
+    if (course.classList.contains("hidden-course") || course.classList.contains("toggled-hidden-course")) {
+      course.classList.toggle("hidden-course");
+      course.classList.add("toggled-hidden-course");
     }
   }
 
-  // toggle the current button visibility
-  elem.classList.toggle("hidden");
-  // toggle the alternate button visibility
-  if  (elem.id === "show-more-btn"){
-    document.getElementById("show-less-btn").classList.toggle("hidden");
-  }else{
-    document.getElementById("show-more-btn").classList.toggle("hidden");
+  // toggle the buttons visibility
+  let buttonsToToggle = elem.parentNode.getElementsByClassName("show-more-btn");
+  for (const buttonToToggle of buttonsToToggle) {
+    buttonToToggle.classList.toggle("hidden");
   }
 }
