@@ -8,6 +8,12 @@ other = "Artikel"
 [toc_heading]
 other = "Daftar Isi"
 
+[tags]
+other = "Tags"
+
+[categories]
+other = "Kategori"
+
 [at]
 other = "at"
 
@@ -33,7 +39,7 @@ other = "Ingin selalu update dengan notifikasi email"
 other = "Masukkan email"
 
 [newsletter_warning]
-other = "Kami tidak pernah berbagi data email dengan siapapun."
+other = "Dengan memasukkan alamat email Anda, Anda setuju untuk menerima buletin situs web ini."
 
 [submit]
 other = "Kirim"
@@ -46,6 +52,9 @@ other = "Sebelumnya"
 
 [next]
 other = "Lanjut"
+
+# [share_on]
+# other = "Share on"
 
 [improve_this_page]
 other = "Perbaiki halaman ini"
@@ -109,3 +118,9 @@ other = "Lihat Sertifikat"
 
 [notes]
 other = "Catatan"
+
+[disclaimer_text]
+other = "Pemberitahuan Kewajiban"
+
+[search]
+other = "Mencari"

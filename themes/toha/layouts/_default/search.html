@@ -1,6 +1,9 @@
 {{ define "header" }}
     <link rel="stylesheet" href="{{ "/css/layouts/list.css" | relURL }}">
     <link rel="stylesheet" href="{{ "/css/navigators/sidebar.css" | relURL}}">
+    <!--================= custom style overrides =========================-->
+    <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}"/>
+
 {{ end }}
 
 {{ define "navbar" }}
@@ -16,8 +19,8 @@
   <section class="sidebar-section" id="sidebar-section">
     <div class="sidebar-holder">
       <div class="sidebar" id="sidebar">
-        <form class="mx-auto" method="get" action="{{ "search" | absURL }}">
-          <input type="text" name="keyword" value="" placeholder="Search" data-search="" id="search-box" />
+        <form class="mx-auto" method="get" action="{{ "search" | relLangURL }}">
+          <input type="text" name="keyword" value="" placeholder="{{ i18n "search" }}" data-search="" id="search-box" />
         </form>
         <div class="sidebar-tree">
           <ul class="tree" id="tree">
@@ -43,7 +46,7 @@
             <a href="${link}" class="post-card-link">
               <div class="card" style="min-height: 352px;"><a href="${link}" class="post-card-link">
                 <div class="card-head">
-                  <img class="card-img-top" src="${hero}">
+                  <img class="card-img-top" src="${hero}" alt="Card Heading Image">
                 </div>
                 <div class="card-body">
                   <h5 class="card-title">${title}</h5>
