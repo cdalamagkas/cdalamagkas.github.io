@@ -31,6 +31,10 @@ socialLinks:
   icon: "fab fa-linkedin"
   url: "https://www.linkedin.com/in/cdalamagkas"
 
+- name: Telegram
+  icon: "fab fa-telegram"
+  url: "https://t.me/cdalamagkas"
+
 - name: Skype
   icon: "fab fa-skype"
   url: "skype:chat?chris.dal"
@@ -39,5 +43,5 @@ socialLinks:
 badges:
 - type: certification
   name: CCNA
-  url: "images/ccna_600.png"
-  badge: "https://images.credly.com/size/340x340/images/683783d8-eaac-4c37-a14d-11bd8a36321d/ccna_600.png"
+  url: "https://www.credly.com/org/cisco/badge/ccna"
+  badge: "images/ccna_600.png"
