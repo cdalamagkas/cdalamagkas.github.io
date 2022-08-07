@@ -44,4 +44,4 @@ badges:
 - type: certification
   name: CCNA
   url: "https://www.credly.com/org/cisco/badge/ccna"
-  badge: "images/ccna_600.png"
+  badge: "/ccna_600.png"
