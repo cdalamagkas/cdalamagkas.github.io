@@ -31,6 +31,10 @@ socialLinks:
   icon: "fab fa-linkedin"
   url: "https://www.linkedin.com/in/cdalamagkas"
 
+- name: ORCID
+  icon: "fa-brands fa-orcid"
+  url: "https://orcid.org/0000-0002-0210-5290"
+
 - name: Telegram
   icon: "fab fa-telegram"
   url: "https://t.me/cdalamagkas"
