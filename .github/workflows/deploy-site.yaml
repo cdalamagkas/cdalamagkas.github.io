@@ -35,4 +35,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: main # if your main branch is `master` use that here.
           publish_dir: ./public
-          cname: christos.pw
+          cname: cdalamagkas.gr
