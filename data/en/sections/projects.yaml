@@ -25,7 +25,7 @@ projects:
   role: Author
   timeline: "Nov 2017"
   summary: My diploma thesis which was submitted to fulfill the requirements for receiving the B.Eng. in Informatics and Telecommunications Engineering.
-  url: https://christos.pw/thesis.pdf
+  url: https://cdalamagkas.gr/thesis.pdf
   tags: ["academic"]
 
 - name: SDN Dashboard
