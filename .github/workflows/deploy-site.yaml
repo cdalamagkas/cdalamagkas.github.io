@@ -19,6 +19,9 @@ jobs:
       with:
         hugo-version: 'latest'
         extended: true
+    
+    - name: Initialize Hugo Module
+      run: hugo mod init github.com/cdalamagkas/cdalamagkas.github.io
 
     - name: Update Hugo Modules
       run: hugo mod tidy
