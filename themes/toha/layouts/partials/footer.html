@@ -66,7 +66,7 @@
 
   <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
     <div class="container pt-5">
-      <div class="row text-left">
+      <div class="row text-start">
         {{ if $navigationEnabled }}
         <div class="col-md-4 col-sm-12">
           <h5>{{ i18n "navigation" }}</h5>
@@ -106,7 +106,9 @@
                   <span><i class="fas fa-envelope"></i></span> <span>{{ $value }}</span>
                 </a></li>
               {{ else if (eq $key "phone") }}
-                <li><span><i class="fas fa-phone-alt"></i></span> <span>{{ $value }}</span></li>
+                <li><a href={{ printf "tel:%s" $value | safeURL }} target="_blank" rel="noopener">
+                  <span><i class="fas fa-phone-alt"></i></span> <span>{{ $value }}</span>
+                </a></li>
               {{ else if (eq $key "linkedin") }}
                 <li><a href={{ printf "https://www.linkedin.com/in/%s" $value }} target="_blank" rel="noopener">
                   <span><i class="fab fa-linkedin"></i></span> <span>{{ $author.name }}</span>
@@ -115,6 +117,24 @@
                 <li><a href={{ printf "https://github.com/%s" $value }} target="_blank" rel="noopener">
                   <span><i class="fab fa-github"></i></span> <span>{{ $value }}</span>
                 </a></li>
+              {{ else if (eq $key "researchgate") }}
+                <li><a href={{ printf "https://www.researchgate.net/profile/%s" $value }} target="_blank" rel="noopener">
+                  <span><i class="fab fa-researchgate"></i></span> <span>{{ $author.name }}</span>
+                </a></li>            
+              {{ else if reflect.IsMap $value }}
+                <li>
+                  {{ if (and (isset $value "url") (isset $value "icon"))}}
+                  <a href={{ $value.url }} target="_blank" rel="noopener">
+                    <span><i class={{ printf "fab fa-%s" $value.icon }}></i></span> <span>{{ $value.text }}</span>
+                  </a>
+                  {{ else if isset $value "icon" }}
+                    <span><i class={{ printf "fab fa-%s" $value.icon }}></i></span> <span>{{ $value.text }}</span>
+                  {{ else }}
+                    <a href={{ $value.url }} target="_blank" rel="noopener">
+                      <span>{{ title $key }}: </span> <span>{{ $value.text }}</span>
+                    </a>
+                  {{ end }}
+                </li>
               {{ else }}
                 <li><span>{{ title $key }}: </span> <span>{{ $value }}</span></li>
               {{ end }}
@@ -155,7 +175,7 @@
               <form method='post' action='https://blogtrottr.com'>
               <div class="form-group">
               <input type='email' class="form-control" name='btr_email' placeholder="{{ i18n "newsletter_input_placeholder" }}"/><br />
-              <input type='hidden' name='btr_url' value='{{ "" | absLangURL }}index.xml' />
+              <input type='hidden' name='btr_url' value='{{ "" | absLangURL }}/index.xml' />
               <input type='hidden' name='schedule_type' value='1' />
               <small id="emailHelp" class="form-text text-muted">{{ i18n "newsletter_warning" }}</small>
               <button type="submit" class="btn btn-info"> {{ i18n "submit" }} </button>
@@ -175,15 +195,15 @@
     {{ if $credentialsEnabled }}
     <hr />
     <div class="container">
-      <div class="row text-left">
+      <div class="row text-start">
         <div class="col-md-4">
-          <a id="theme" href="https://github.com/hossainemruz/toha" target="_blank" rel="noopener">
+          <a id="theme" href="https://github.com/hugo-toha/toha" target="_blank" rel="noopener">
             <img src="{{ $themeLogo }}" alt="Toha Theme Logo">
             Toha
           </a>
         </div>
         <div class="col-md-4 text-center">{{ $copyrightNotice | markdownify }}</div>
-        <div class="col-md-4 text-right">
+        <div class="col-md-4 text-end">
           <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">{{ i18n "hugoAttributionText" }}
           <img
             src="{{ $hugoLogo }}"

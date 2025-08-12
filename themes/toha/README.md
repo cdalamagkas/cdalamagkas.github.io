@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> If you are migrating from v3 (`git submodule` based) theme to v4 (`hugo modules` based) theme, please read this [migration guide](https://toha-guides.netlify.app/posts/update-v3-to-v4/).
+
 # Toha
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b1b93b02-f278-440b-ae1b-304e9f4c4ab5/deploy-status)](https://app.netlify.com/sites/toha/deploys)
@@ -34,6 +37,8 @@ A [Hugo](https://gohugo.io/) theme for a personal portfolio with minimalist desi
   - GoatCounter
   - counter.dev
   - Google Analytics
+  - Matomo/Piwik
+  - [Umami](https://umami.is/)
 - Comment Support
   - [Disqus](https://disqus.com/)
   - [Valine](https://valine.js.org/)
@@ -51,6 +56,7 @@ For more details about the features please visit [here](https://toha-guides.netl
 - Deutsch
 - Español
 - 简体中文
+- 繁體中文
 - हिन्दी
 - Italiano
 - 日本語
@@ -58,6 +64,14 @@ For more details about the features please visit [here](https://toha-guides.netl
 - русский
 - suomi
 - Tiếng Việt
+- Azerbaijan
+- Turkish
+- Arabic (العربية)
+- Português Europeu
+- Català
+- Português Brasileiro
+- Nederlands
+- Hebrew
 
 To know more about how to translate your site, please visit [here](https://toha-guides.netlify.app/posts/translation/). Follow, the data and post format from this [example site](https://hugo-toha.github.io).
 
@@ -79,92 +93,70 @@ Here are few screenshots from the [example site](https://hugo-toha.github.io).
 
 ## Requirements
 
-- Hugo Version 0.87.0 or higher
+- Hugo Version 0.128.0 (extended) or higher
+- Go language 1.18 or higher (require for hugo modules)
+- Node version v18.x or later and npm 8.x or later.
 
 ## Usage
 
-In order to use this theme, follow the following steps:
+The easiest way to use this theme is to fork [hugo-toha.github.io](https://github.com/hugo-toha/hugo-toha.github.io) sample repo.Then change the configurations according to your need.
 
-#### Add theme as git submodule
+If you want to start from scratch, then follow these steps:
 
-At first, add [Toha](https://github.com/hugo-toha/toha) theme as git submodule to your hugo-site.
+##### 1. Initialize Hugo module on you repo
 
-```console
-$ git submodule add https://github.com/hugo-toha/toha.git themes/toha
+At first, initialize [Hugo modules](https://gohugo.io/hugo-modules/) in your repo. This will create a `go.mod` file.
+
+```bash
+hugo mod init github.com/<your username>/<your repo name>
 ```
 
-> Don't use SSH URL of the theme during adding as git sub-module. Also, don't clone the theme in your `themes` directory using `git clone`. They don't work well with Github Action or Netlify.
+##### 2. Add this theme as your module dependency
 
-If you don't already have a hugo site, create one by following the step-by-step guide from [here](https://toha-guides.netlify.app/posts/getting-started/prepare-site/).
-
-#### Configuring Site
-
-Now, configure your site to use `toha` theme by adding the following configuration in `config.yaml` file of your site.
+Now, in your `hugo.yaml` file, add a `module` section.
 
 ```yaml
-baseURL: https://hugo-toha.github.io
-
-languageCode: en-us
-title: "John's Blog"
-theme: "toha"
-
-# Manage languages
-# For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
-languages:
-  en:
-    languageName: English
-    weight: 1
-
-# Control TOC depth
-markup:
-  tableOfContents:
-    startLevel: 2
-    endLevel: 6
-    ordered: false
-
-# At least HTML and JSON are required for the main HTML content and
-# client-side JavaScript search
-outputs:
-  home:
-  - HTML
-  - RSS
-  - JSON
-
-# Enable global emoji support
-enableEmoji: true
-
-# Site parameters
-params:
-  # GitHub repo URL and branch of your site
-  gitRepo: https://github.com/hugo-toha/hugo-toha.github.io
-  gitBranch: main
-
-  # specify whether you want to write some blog posts or not
-  enableBlogPost: true
-
-  # specify whether you want to show Table of Contents in reading page
-  enableTOC: true
-
-  # Provide newsletter configuration. 
-  # This feature has been implemented for Mailchimp only for now.
-  # You can also hide it from the footer.
-  newsletter:
-    # specify whether you want to display the newsletter form 
-    enable: true
-    # specify which newsletter provider you want to use
-    provider: mailchimp
-    # specify the target URL for the subscription form
-    mailchimpURL: https://github.us1.list-manage.com/subscribe/post?u=19de52a4603135aae97163fd8&amp;id=094a24c76e
+# Use Hugo modules to add theme
+module:
+  imports:
+  - path: github.com/hugo-toha/toha/v4
 ```
 
-Don't forget to update `title`, `baseURL`, and `gitRepo` fields with your own information. To know about more available configuration options, please visit [here](https://toha-guides.netlify.app/posts/configuration/site-parameters/).
+Check this sample [hugo.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/hugo.yaml) for further reference.
+
+##### 3. Update your module
+
+Now, run this command to load this theme as your module.
+
+```bash
+hugo mod tidy
+```
 
 #### Running Locally
 
-Now, you can run your hugo site with `toha` theme locally with the following command:
+Now, you can run your hugo site locally with the following steps:
 
-```console
-$ hugo server --theme toha --watch
+##### 1. Generate node dependency configuration
+
+Now run the following command to generate node dependency configuration. This will create the a `package.json` file in you repo.
+
+```bash
+hugo mod npm pack
+```
+
+##### 2. Install dependencies
+
+Install the node dependencies using following command:
+```bash
+npm install
+```
+
+##### 3. Run your site
+
+Now, run you site locally using following command.
+
+```bash
+hugo server -w
 ```
 
 When you run your site for first time, it will start with the default parameters. It should look similar to the [example site](https://hugo-toha.github.io). However, it will not have any sections in the homepage as we haven't configured them yet. You can configure your site by following the guides from [here](https://toha-guides.netlify.app/posts/configuration/).
@@ -179,138 +171,6 @@ Here, are some handy shortcodes you can use with this theme.
 - [Vertical Space](https://toha-guides.netlify.app/posts/shortcodes/#vertical-space)
 - [Video](https://toha-guides.netlify.app/posts/shortcodes/#video)
 - [Mermaid](https://hugo-toha.github.io/posts/shortcodes/#mermaid)
-
-## Project Roadmap
-
-Here, are the current plan and progress of various components of this theme. The components will be prioritized based on users requests.
-
-### 1. Portfolio Mode
-
-Here is the check list for portfolio mode,
-
-- [x] **Home**
-
-  - [x] Configurable Background
-  - [x] Author Image
-  - [x] Greeting
-  - [x] Typing Carousel
-
-- [x] **About**
-
-  - [x] Name and Designation
-  - [x] Summary
-    - [x] Markdown Support
-  - [x] Social Links
-    - [x] Font Awesome Support
-  - [x] Resume Link
-  - [x] Soft Skills Indicator
-
-- [x] **Skills**
-
-  - [x] Skill Cards
-  - [x] Markdown Support
-
-- [x] **Experiences**
-
-  - [x] Designation
-  - [x] Timeline
-  - [x] Company Overview
-  - [x] Responsibilities
-
-- [x] **Projects**
-
-  - [x] Category Filter
-  - [x] Project Card
-    - [x] Overview
-      - [x] Markdown Support
-    - [x] Github Stars
-    - [x] External URL Support
-    - [x] Technology Tags
-
-- [x] **Recent Posts**
-
-- [x] **Academic Career**
-
-  - [x] Degree
-  - [x] Institution
-  - [x] Timeline
-  - [x] Taken Courses
-  - [x] CGPA
-  - [x] Extracurricular Activities
-
-- [ ] **Publications**
-
-  - [ ] Category Filter
-  - [ ] Card
-  - [ ] Abstract
-  - [ ] Authors
-  - [ ] Tags
-  - [ ] Links
-  - [ ] Gallery
-
-- [x] **Accomplishment / Courses**
-
-  - [x] Overview
-  - [x] Certificate
-
-- [x] **Achievements Gallery**
-  - [x] Image
-  - [x] Summary
-
-### 2. Blog Mode
-
-Here is the checklist for blog mode,
-
-- [ ] **Dedicated Home page**
-
-- [x] **List Page**
-
-  - [x] Post Cards
-  - [x] Sidebar
-  - [x] Pagination
-
-- [x] **Reading Page**
-
-  - [x] Hero Image
-  - [x] Author Information
-  - [x] Sidebar
-  - [x] Table of Contents
-  - [x] Next & Previous Page Navigation
-  - [x] `Improve This Page` Button
-  - [x] Disqus Comment
-
-### 3. Documentation Mode
-
-Here is the check list for documentation mode,
-
-- [ ] **Dedicated Home Page**
-- [ ] **Doc Page**
-  - [ ] Redesign sidebar
-  - [ ] Redesign TOC menu
-  - [ ] Search Capability
-
-### 4. Note Mode
-
-- [ ] **Dedicated Home Page**
-- [ ] **Note Page**
-  - [x] Add note view
-  - [ ] Redesign sidebar
-  - [ ] Add search capability
-
-### 5. Tracking and Comments
-
-- [x] Google Analytics
-- [x] Disqus Comment
-
-### 6. Shortcodes
-
-- [x] Image
-- [x] Split Page into Multiple Column
-- [x] Vertical space between two sections
-- [x] Alert
-- [ ] Figure & sub-figure
-- [ ] Tabs
-- [x] Notes
 
 ## Contributing
 
@@ -333,34 +193,72 @@ For local development, you can make changes in the theme submodule and test the 
 
 At first, fork [this repo](https://github.com/hugo-toha/toha). Then, follow the following steps to use the forked theme for local developments,
 
-**Using the forked theme in your own site:**
-
-If you want to run your local development against your own site, follow the following steps:
-
-```bash
-# add the original theme as a submodule of your site if you haven't done already
-$ git submodule add https://github.com/hugo-toha/toha.git themes/toha
-# navigate into the toha theme folder
-$ cd themes/toha
-# add your own fork as a remote
-$ git remote add my-fork https://github.com/<your-github-user>/toha
-# create a new branch for your changes
-$ git checkout -b my-feature-branch
-```
-
-**Using the forked theme in the example site:**
+#### Running the forked theme against the example site
 
 If your want to run your local development against this [example site](https://github.com/hugo-toha/hugo-toha.github.io), follow the following steps:
 
 ```bash
-# clone the example site along with the submodules
-$ git clone git@github.com:hugo-toha/hugo-toha.github.io.git --recursive
-# navigate into the toha theme folder
-$ cd themes/toha
-# add your own fork as a remote
-$ git remote add my-fork https://github.com/<your-github-user>/toha
-# create a new branch for your changes
-$ git checkout -b my-feature-branch
+# go to exampleSite directory
+$ cd exampleSite
+# install hugo modules
+$ hugo mod tidy
+# install dependencies
+$ hugo mod npm pack
+$ npm install
+# run the example site locally
+$ hugo server -w
+```
+
+Now, you can make change in the theme and they will be reflected immediately on the running site. If you need to change any configuration, you can do that in the `hugo.yaml` file inside `exampleSite` folder. If you need to add any content or data, you can create the respective folder inside `exampleSite` directory and add your desired content or data there.
+
+#### Running the forked theme against your own site
+
+If you want to run your local development against your own site, follow the following steps:
+
+**Replace the theme module:**
+
+Open your site's `go.mod` file and replace the `github.com/hugo-toha/toha/v4` with your forked repo's path. For example, if your forked repo is `github.com/<your-github-user>/toha`, then replace the `github.com/hugo-toha/toha/v4` with `github.com/<your-github-user>/toha/v4`.
+
+```go
+module github.com/hugo-toha/hugo-toha.github.io
+
+go 1.19
+
+require github.com/hugo-toha/toha/v4 v4.0.1-0.20231229170427-d3968ca711ef // indirect
+
+replace(
+    github.com/hugo-toha/toha/v4 => github.com/<your-github-user>/toha/v4 <git branch>
+)
+```
+
+For interactive development, you can replace the theme with your locally cloned fork. For example, if you have cloned your fork in `/home/my-projects/toha`, then replace the `github.com/hugo-toha/toha/v4` with `/home/my-projects/toha`.
+
+```go
+module github.com/hugo-toha/hugo-toha.github.io
+
+go 1.19
+
+require github.com/hugo-toha/toha/v4 v4.0.1-0.20231229170427-d3968ca711ef // indirect
+
+replace(
+    github.com/hugo-toha/toha/v4 => /home/my-projects/toha
+)
+```
+
+**Update dependencies:**
+
+```bash
+# update hugo modules
+$ hugo mod tidy
+# install dependencies
+$ hugo mod npm pack
+$ npm install
+```
+
+**Run your site locally:**
+
+```bash
+$ hugo server -w
 ```
 
 From there you can make changes to the source code of the theme while testing with your running Hugo site or the example site.

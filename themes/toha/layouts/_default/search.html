@@ -1,18 +1,10 @@
-{{ define "header" }}
-    <link rel="stylesheet" href="{{ "/css/layouts/list.css" | relURL }}">
-    <link rel="stylesheet" href="{{ "/css/navigators/sidebar.css" | relURL}}">
-    <!--================= custom style overrides =========================-->
-    <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}"/>
-
-{{ end }}
-
 {{ define "navbar" }}
-    {{ partial "navigators/navbar-2.html" . }}
+    {{ partial "navigators/navbar.html" . }}
 {{ end }}
 
 {{ define "sidebar" }}
   {{ $homePage:="#" }}
-  {{ if site.IsMultiLingual }}
+  {{ if hugo.IsMultilingual }}
     {{ $homePage = (path.Join (cond ( eq .Language.Lang "en") "" .Language.Lang) .Type) }}
   {{ end }}
 
@@ -36,28 +28,40 @@
 {{ end }}
 
 {{ define "content" }}
+<script>
+  document.body.classList.replace('kind-page', 'kind-section');
+</script>
 <section class="content-section" id="content-section">
   <div class="content container-fluid" id="content">
     <div class="container-fluid post-card-holder" id="post-card-holder">
-      <div id="search-results">
+      <div id="search-results" style="display: flex; flex-wrap: wrap;">
 
         <script id="search-result-template" type="text/x-js-template">
           <div class="post-card">
-            <a href="${link}" class="post-card-link">
-              <div class="card" style="min-height: 352px;"><a href="${link}" class="post-card-link">
+              <div class="card">
                 <div class="card-head">
+                  <a href="${link}" class="post-card-link">
                   <img class="card-img-top" src="${hero}" alt="Card Heading Image">
+                  </a>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">${title}</h5>
-                  <p class="card-text post-summary">${summary}</p>
+                  <a href="${link}" class="post-card-link">
+                    <h5 class="card-title">${title}</h5>
+                    <p class="card-text post-summary">${summary}</p>
+                  </a>
+                  {{ if site.Params.features.tags.on_card }}
+                  <div class="tags">
+                    <ul style="padding-left: 0;">
+                    ${tags}
+                    </ul>
+                  </div>
+                  {{ end }}
                 </div>
                 <div class="card-footer">
-                  <span class="float-left">${date}</span>
-                  <a href="${link}" class="float-right btn btn-outline-info btn-sm">Read</a>
+                  <span class="float-start">${date}</span>
+                  <a href="${link}" class="float-end btn btn-outline-info btn-sm">Read</a>
                 </div>
               </div>
-	          </a>
           </div>
         </script>
 
@@ -65,10 +69,4 @@
     </div>
   </div>
 </section>
-{{ end }}
-
-{{ define "scripts" }}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.0/fuse.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js"></script>
-<script src="{{ "/js/search.js" | absURL }}"></script>
 {{ end }}

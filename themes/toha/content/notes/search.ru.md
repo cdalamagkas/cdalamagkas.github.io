@@ -15,7 +15,7 @@ No content shown here is rendered, all content is based in the template layouts/
 
 Setting a very low sitemap priority will tell search engines this is not important content.
 
-This implementation uses Fusejs, jquery and mark.js
+This implementation uses Fusejs and mark.js
 
 
 ## Initial setup
@@ -26,7 +26,7 @@ Search  depends on additional output content type of JSON in config.toml
   home = ["HTML", "JSON"]
 \```
 
-## Searching additional fileds
+## Searching additional fields
 
 To search additional fields defined in front matter, you must add it in 2 places.
 
@@ -43,7 +43,7 @@ i.e. add `category`
 \```
 
 ### Edit fuse.js options to Search
-`static/js/search.js`
+`assets/scripts/pages/search.js`
 \```
 keys: [
   "title",
