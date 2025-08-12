@@ -1,0 +1,91 @@
+baseURL: https://cdalamagkas.gr
+
+languageCode: en-us
+title: "Christos Dalamagkas"
+
+# Use Hugo modules to add theme
+module:
+  imports:
+  - path: github.com/hugo-toha/toha/v4
+  mounts:
+  - source: static/files
+    target: static/files
+  - source: ./node_modules/flag-icon-css/flags
+    target: static/flags
+  - source: ./node_modules/@fontsource/mulish/files
+    target: static/files
+  - source: ./node_modules/katex/dist/fonts
+    target: static/fonts
+
+# Manage languages
+# For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
+languages:
+  en:
+    languageCode: en
+    languageName: English
+    title: "Christos Dalamagkas"
+    weight: 1
+# default language for the content
+defaultContentLanguage: en
+
+# At least HTML and JSON are required for the main HTML content and
+# client-side JavaScript search
+outputs:
+  home:
+    - HTML
+    - JSON
+
+# Enable global emoji support
+enableEmoji: true
+
+# Site parameters
+params:
+  # GitHub repo URL of your site
+  gitRepo: https://github.com/cdalamagkas/cdalamagkas.github.io
+  # Default branch of your Git repo
+  gitBranch: main
+
+  # Background image of the landing page for dark theme
+  #darkBackground: /images/site/background.jpg
+  background: "images/background.png"
+  
+  # Provide logos for your site. The inverted logo will be used in the initial
+  # transparent navbar and the main logo will be used in the non-transparent navbar.
+  logo:
+    favicon: images/favicon.png
+
+  features:
+    # Configure theme color settings
+    theme:
+      enable: true
+      services:
+        light: true # enable light theme. default "true"
+        dark: true # enable dark theme. default "true"
+        default: system # can be either light, dark or system. default "system"
+    
+    # Enable and configure blog posts
+    blog:
+      enable: false
+
+    # Enable & configure "Notes" features
+    notes:
+      enable: false
+    
+    # specify whether you want to show Table of Contents in reading page
+    toc:
+      enable: false
+    
+
+    # Provide footer configuration.
+    footer:
+      enable: false
+      # Provide newsletter configuration. This feature hasn't been implemented yet.
+      # Currently, you can just hide it from the footer.
+      newsletter:
+        enable: false
+  
+
+
+
+
+
