@@ -32,8 +32,11 @@ jobs:
       run: |
         hugo mod npm pack
         npm install
+     
+    - name: Fix vulnerabilities in the npm packages
+      run: npm audit fix --force
 
-    - name: Build
+    - name: Build Hugo
       run: hugo --minify
 
     # push the generated content into the `main` branch.
