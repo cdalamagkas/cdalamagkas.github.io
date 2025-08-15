@@ -39,11 +39,6 @@ socialLinks:
   icon: "fab fa-telegram"
   url: "https://t.me/cdalamagkas"
 
-- name: Skype
-  icon: "fab fa-skype"
-  url: "skype:chat?chris.dal"
-
-
 badges:
 - type: certification
   name: CCNA

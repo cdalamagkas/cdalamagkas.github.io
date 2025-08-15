@@ -12,27 +12,27 @@ section:
 # Give a summary of you each skill in the summary section.
 skills:
 - name: Computer Networking and SDN
-  icon: "/images/sections/skills/kubernetes.png"
+  icon: "/images/sections/skills/networking.svg"
   summary: "Certified under the CCNA programme (2019), Python Scapy, ArubaOS-Switch, OpenFlow 1.3, Ryu, GNS3."
 
 - name: Programming
-  icon: "/images/sections/skills/cloud.png"
+  icon: "/images/sections/skills/dev.svg"
   summary: "Python, JavaScript, Django, Java, MATLAB, C/C++"
 
 - name: Virtualization
-  icon: "/images/sections/skills/cloud.png"
+  icon: "/images/sections/skills/linux.png"
   summary: "Proxmox VE, KVM, XCP-ng, VMware Workstation, Virtualbox."
 
 - name: DevOps
-  icon: "/images/sections/skills/cloud.png"
+  icon: "/images/sections/skills/git.png"
   summary: "Docker, Dockerfiles, GitLab CI/CD pipelines for Docker apps, docker-compose."
 
 - name: Cybersecurity
-  icon: "/images/sections/skills/cloud.png"
+  icon: "/images/sections/skills/cybersecurity.png"
   summary: "pfSense, PKI, OpenVPN, ettercap, Python Scapy, LDAP, OIDC"
 
 - name: Industrial IoT
-  icon: "/images/sections/skills/cloud.png"
+  icon: "/images/sections/skills/iot.svg"
   summary: "Modbus TCP, MQTT, Raspberry Pi 4, I2C, DLMS/COSEM, OCPP 1.6-J."
 
 - name: Telecommunications
