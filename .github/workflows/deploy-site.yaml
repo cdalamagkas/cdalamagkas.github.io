@@ -46,3 +46,4 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: main
         publish_dir: ./public
+        cname: cdalamagkas.gr
