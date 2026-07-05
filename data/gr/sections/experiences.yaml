@@ -1,0 +1,82 @@
+# Greek-language mirror of data/en/sections/experiences.yaml, CV-only.
+# Company order and cv: fields (logo/logoOffset/logoWidth) match the
+# English file exactly - only display text is translated.
+experiences:
+- company:
+    name: K3Y Ltd
+    url: "https://k3ylabs.com/"
+    cv:
+      logo: k3y
+      logoOffset: "-1.25cm"
+      logoWidth: 0.6
+  positions:
+  - designation: Senior Network and Security Engineer
+    start: Ιαν. 2026
+    responsibilities:
+    - "Ερευνητής σε ευρωπαϊκά προγράμματα: [XTRUST-6G](https://cordis.europa.eu/project/id/101192749), [SALUS](https://cordis.europa.eu/project/id/101225719), [CASTOR](https://cordis.europa.eu/project/id/101167904), [ENFORCE](https://enforceproject.eu/), IRONPLAN EDF, [SECASSURED](https://cordis.europa.eu/project/id/101225858), [CIPHER](https://cipher-eu.com/)."
+
+- company:
+    name: Metamind Innovations P.C. (MINDS)
+    url: "https://metamind.gr/"
+    cv:
+      logo: minds
+      logoOffset: "-1.25cm"
+      logoWidth: 0.6
+  positions:
+  - designation: Εξωτερικος Συνεργατης - Ερευνητης
+    start: Απρ. 2024
+    end: Νοε. 2025
+    responsibilities:
+    - "Ερευνητής σε ευρωπαϊκά προγράμματα: [NERO Digital Europe](https://metamind.gr/project/nero/)."
+    - "Product Manager & Developer: MINDS SDN Controller & Dashboard."
+    - "Ερευνητικοί τομείς: Industrial IoT, Cybersecurity, Digitalisation."
+
+- company:
+    name: Δημοσια Επιχειρηση Ηλεκτρισμου Α.Ε. (ΔΕΗ)
+    url: "https://www.dei.gr/en"
+    cv:
+      logo: dei
+      logoOffset: "-1.25cm"
+      logoWidth: 0.6
+  positions:
+  - designation: Εξωτερικος Συνεργατης - Ερευνητης
+    start: Μάϊ. 2018
+    end: Νοε. 2025
+    responsibilities:
+    - "Ερευνητής σε ευρωπαϊκά προγράμματα: [SPEAR H2020](https://cordis.europa.eu/project/id/787011), [SDN-microSENSE H2020](https://cordis.europa.eu/project/id/833955), [TERMINET H2020](https://cordis.europa.eu/project/id/957406), [JAUNTY Erasmus+](https://www.jaunty.eu/), [ELECTRON H2020](https://cordis.europa.eu/project/id/101021936), [AI4CYBER HE](https://cordis.europa.eu/project/id/101070450), [DYNABIC HE](https://cordis.europa.eu/project/id/101070455), [PHOENI2X HE](https://cordis.europa.eu/project/id/101070586), [EV4EU HE](https://cordis.europa.eu/project/id/101056765)."
+    - "Product Manager & Developer: [Open V2X Management Platform](https://github.com/EV4EU/ov2xmp)."
+    - "Ερευνητικοί τομείς: Industrial IoT, software-defined networking, cybersecurity."
+    - "System Architect και Διαχειριστής Συστημάτων στο Εργαστήριο Διαδικτύου των Πραγμάτων και Βιομηχανικών Εφαρμογών της [PPC Inspectra](https://www.ppcgroup.com/en/ppc-inspectra/)."
+
+- company:
+    name: Πανεπιστημιο Δυτικης Μακεδονιας
+    url: "https://ithaca.ece.uowm.com"
+    cv:
+      logo: uowm
+      logoOffset: "-1.25cm"
+      logoWidth: 0.6
+  positions:
+  # unaccented: this designation is rendered through \sc (smallcaps) -
+  # see the note in data/gr/sections/about.yaml
+  - designation: Εξωτερικος Συνεργατης / Βοηθος Ερευνας
+    start: Μάι. 2018
+    # still active - no end date
+    responsibilities:
+    - "Βοήθεια και διαχείριση ερευνητικών προγραμμάτων σε ευρωπαϊκό επίπεδο."
+    - "Προετοιμασία ερευνητικών προτάσεων στους τομείς IoT και κυβερνοασφάλειας (συμπεριλαμβανομένων των [TERMINET H2020](https://www.terminet-h2020.eu), [ELECTRON H2020](https://www.electron-project.eu), [Jaunty Erasmus+](https://www.jaunty.eu))."
+    - "Ανάπτυξη λογισμικού."
+
+- company:
+    name: ΙΙΕΚ ΑΛΦΑ
+    url: "https://iekalfa.gr"
+    cv:
+      logo: alfa
+      logoOffset: "-1cm"
+      logoWidth: 0.6
+  positions:
+  - designation: Δασκαλος
+    start: Οκτ. 2018
+    end: Ιουν. 2019
+    responsibilities:
+    - "Δίκτυα Υπολογιστών, Τηλεπικοινωνίες, Λειτουργικά Συστήματα και Αντικειμενοστραφής Προγραμματισμός (C++)."
+    - "Εκπαιδευτικό υλικό διαθέσιμο στο GitHub: [cs-lectures-gr](https://github.com/cdalamagkas/cs-lectures-gr)."

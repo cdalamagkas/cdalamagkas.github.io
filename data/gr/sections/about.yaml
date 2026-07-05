@@ -1,0 +1,31 @@
+# Greek-language mirror of data/en/sections/about.yaml, CV-only.
+# NOTE: designation/titleSecondary are rendered through mycv.cls's \name
+# macro, which applies \sc (smallcaps). The original CV consistently wrote
+# any \sc-rendered Greek text WITHOUT tonos accents (this font/engine
+# combination renders accented uppercase oddly), while accented text
+# elsewhere (bullets, skills table) is fine. Match that convention here.
+designation: Κυβερνοασφαλεια
+location: "Θεσσαλονίκη, Ελλάδα"
+cv:
+  titleSecondary: "Μηχανικος Δικτυων (CCNA)"
+
+socialLinks:
+- name: Github
+  url: "https://github.com/cdalamagkas"
+
+- name: LinkedIn
+  url: "https://www.linkedin.com/in/cdalamagkas"
+
+- name: ORCID
+  url: "https://orcid.org/0000-0002-0210-5290"
+
+badges:
+- type: certification
+  name: CCNA
+  url: "https://www.cisco.com/"
+  date: "Ιουλ. 2019"
+  cv:
+    name: "Cisco Certified Network Associate (CCNA)"
+    logo: cisco
+    logoOffset: "-0.75cm"
+    logoWidth: 0.6

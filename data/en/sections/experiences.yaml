@@ -11,16 +11,52 @@ section:
 # Your experiences
 experiences:
 - company:
+    name: K3Y Ltd.
+    url: "https://k3ylabs.com/"
+    # TODO: fill in company location
+    cv:
+      logo: k3y
+      logoOffset: "-1.25cm"
+      logoWidth: 0.6
+  positions:
+  - designation: Senior Network and Security Engineer
+    start: Jan 2026
+    responsibilities:
+    - "Researcher for EU-funded programmes: [XTRUST-6G](https://cordis.europa.eu/project/id/101192749), [SALUS](https://cordis.europa.eu/project/id/101225719), [CASTOR](https://cordis.europa.eu/project/id/101167904), [ENFORCE](https://enforceproject.eu/), IRONPLAN EDF, [SECASSURED](https://cordis.europa.eu/project/id/101225858), [CIPHER](https://cipher-eu.com/)."
+
+- company:
+    name: Metamind Innovations P.C. (MINDS)
+    url: "https://metamind.gr/"
+    # TODO: fill in company location
+    cv:
+      logo: minds
+      logoOffset: "-1.25cm"
+      logoWidth: 0.6
+  positions:
+  - designation: Associate Researcher
+    start: Apr 2024
+    end: Nov 2025
+    responsibilities:
+    - "Researcher for EU-funded programmes: [NERO Digital Europe](https://metamind.gr/project/nero/)."
+    - "Product Manager & Developer: MINDS SDN Controller & Dashboard."
+    - "Research topics: Industrial IoT, Cybersecurity, Digitalisation."
+
+- company:
     name: Public Power Corporation S.A.
     url: "https://www.dei.gr"
     location: PPC Innovation Hub, Athens, Greece
     # company overview
     overview: PPC is the largest energy producer and energy retailer in Greece.
+    cv:
+      logo: dei
+      # this entry has a long bullet list, needs more push-down than the
+      # usual -1.25cm to keep the logo from drifting away from the heading
+      logoOffset: "-3cm"
+      logoWidth: 0.6
   positions:
   - designation: Contractor / Researcher
     start: May 2018
-    # don't provide end date if you are currently working there. It will be replaced by "Present"
-    # end: Dec 2020
+    end: Nov 2025
     # give some points about what was your responsibilities at the company.
     responsibilities:
     - Researcher for European research programmes ([SPEAR H2020](https://www.spear2020.eu), [SDN-microSENSE H2020](https://www.sdnmicrosense.eu), [TERMINET H2020](https://www.terminet-h2020.eu), [ELECTRON H2020](https://www.electron-project.eu),  [Jaunty Erasmus+](https://www.jaunty.eu), [AI4CYBER HE](https://ai4cyber.eu/), [DYNABIC HE](https://dynabic.eu/), [EV4EU HE](https://ev4eu.eu/))
@@ -36,9 +72,14 @@ experiences:
     name: University of Western Macedonia
     url: "https://ithaca.ece.uowm.com"
     location: Kozani, Greece
+    cv:
+      logo: uowm
+      logoOffset: "-1.25cm"
+      logoWidth: 0.6
   positions:
   - designation: External Collaborator / Research Assistant
     start: May 2018
+    # still active - don't provide end date. It will be replaced by "Present"
     responsibilities:
     - Research assistance and management for European research programmes.
     - Proposal writing in the IoT and cybersecurity domains (including [TERMINET H2020](https://www.terminet-h2020.eu), [ELECTRON H2020](https://www.electron-project.eu), [Jaunty Erasmus+](https://www.jaunty.eu)).
@@ -48,10 +89,18 @@ experiences:
     name: IEK ALFA (IEK ΑΛΦΑ)
     url: "https://www.iekalfa.gr"
     location: Athens, Greece
-    overview: IEK ALFA is a vocational school in Greece. 
+    overview: IEK ALFA is a vocational school in Greece.
+    cv:
+      # override: pdflatex (used for the English CV) can't render the Greek
+      # script in `name` above without full Unicode/Greek font support
+      name: "IEK ALFA (Vocational school)"
+      logo: alfa
+      logoOffset: "-1cm"
+      logoWidth: 0.6
   positions:
   - designation: Teacher
-    start: May 2018
+    start: Oct 2018
+    end: Jun 2019
     responsibilities:
     - Computer Networks
     - Network Security

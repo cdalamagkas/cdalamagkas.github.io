@@ -1,0 +1,23 @@
+# Greek-language mirror of data/en/sections/activities.yaml, CV-only.
+activities:
+- name: Πανεπιστημιο Δυτικης Μακεδονιας
+  url: "https://uowm.gr"
+  role: Συντακτης εκπαιδευτικου υλικου
+  timeframe: "Μαρτ. 2016 - Τωρα"
+  cv:
+    logo: uowm
+    logoOffset: "-1.1cm"
+    logoWidth: 0.6
+  bullets:
+  - "Συγγραφή πρωτότυπου εκπαιδευτικού υλικού για το μάθημα «Σχεδίαση Δικτύων»: [network-design-labs](https://github.com/cdalamagkas/network-design-labs)"
+  - "Η ύλη περιλαμβάνει δρομολόγηση και μεταγωγή με συσκευές Cisco και Mikrotik."
+
+- name: Ινστιτουτο Ηλεκτρολογων και Ηλεκτρονικων Μηχανικων
+  url: "https://www.ieee.org/"
+  role: Μελος
+  timeframe: "Σεπτ. 2013 -- Τωρα"
+  cv:
+    logo: ieee
+    logoOffset: "-0.5cm"
+    logoWidth: 0.6
+  bullets: []

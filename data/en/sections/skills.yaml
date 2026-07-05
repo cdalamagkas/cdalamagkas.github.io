@@ -10,36 +10,98 @@ section:
 
 # Your Skills.
 # Give a summary of you each skill in the summary section.
+# `cv:` is a CV-only block consumed by cv/generate/render_cv.py, rendering
+# this skill as one row of the CV's skills table (`label` overrides the row
+# heading, falling back to `name`; `bold` matches the current CV's emphasis).
 skills:
 - name: Computer Networking and SDN
   icon: "/images/sections/skills/networking.svg"
   summary: "Certified under the CCNA programme (2019), Python Scapy, ArubaOS-Switch, OpenFlow 1.3, Ryu, GNS3."
+  cv:
+    label: "Computer Networking"
+    items:
+    - {text: "Cisco IOS", bold: true}
+    - {text: "Open vSwitch", bold: true}
+    - {text: "ArubaOS-Switch", bold: true}
+    - {text: "OpenFlow", bold: true}
+    - {text: "Python Ryu", bold: true}
 
 - name: Programming
   icon: "/images/sections/skills/dev.svg"
   summary: "Python, JavaScript, Django, Java, MATLAB, C/C++"
+  cv:
+    items:
+    - {text: "Python", bold: true}
+    - {text: "JavaScript", bold: true}
+    - {text: "Django", bold: true}
+    - {text: "MATLAB", bold: true}
+    - {text: "Java", bold: false}
+    - {text: "C/C++", bold: false}
 
 - name: Virtualization
   icon: "/images/sections/skills/linux.png"
   summary: "Proxmox VE, KVM, XCP-ng, VMware Workstation, Virtualbox."
+  cv:
+    items:
+    - {text: "Proxmox VE", bold: true}
+    - {text: "XCP-ng", bold: false}
+    - {text: "VMware Workstation", bold: false}
 
 - name: DevOps
   icon: "/images/sections/skills/git.png"
   summary: "Docker, Dockerfiles, GitLab CI/CD pipelines for Docker apps, docker-compose."
+  cv:
+    items:
+    - {text: "Docker", bold: true}
+    - {text: "GitLab CI/CD", bold: true}
+    - {text: "GitHub Actions", bold: true}
 
 - name: Cybersecurity
   icon: "/images/sections/skills/cybersecurity.png"
   summary: "pfSense, PKI, OpenVPN, ettercap, Python Scapy, LDAP, OIDC"
+  cv:
+    items:
+    - {text: "pfSense", bold: true}
+    - {text: "OpenVPN", bold: true}
+    - {text: "Python Scapy", bold: true}
+    - {text: "Wazuh", bold: true}
+    - {text: "OIDC", bold: false}
+    - {text: "PKI", bold: false}
 
 - name: Industrial IoT
   icon: "/images/sections/skills/iot.svg"
   summary: "Modbus TCP, MQTT, Raspberry Pi 4, I2C, DLMS/COSEM, OCPP 1.6-J."
+  cv:
+    items:
+    - {text: "Modbus TCP", bold: true}
+    - {text: "OCPP 1.6-J", bold: true}
+    - {text: "MQTT", bold: true}
+    - {text: "DLMS/COSEM", bold: false}
 
 - name: Telecommunications
   icon: "/images/sections/skills/cloud.png"
   summary: "ITU-T PONs, OMNeT++."
+  cv:
+    items:
+    - {text: "ITU-T PONs", bold: false}
+    - {text: "Simulation (OMNeT++, GNS3)", bold: false}
 
 - name: Miscellaneous
   icon: "/images/sections/skills/cloud.png"
   summary: "Troubleshooting, Horizon 2020 Project Management, Office Suite, LATEX"
+  cv:
+    items:
+    - {text: "Troubleshooting", bold: false}
+    - {text: "Horizon Europe Project Management", bold: false}
+    - {text: "Office Suite", bold: false}
+    - {text: "LaTeX", bold: false}
+
+- name: Languages
+  icon: "/images/sections/skills/cloud.png"
+  summary: "Greek (native), English (C2), German (C1)."
+  cv:
+    items:
+    - {text: "Greek (native)", bold: false}
+    - {text: "English (C2)", bold: false}
+    - {text: "German (C1)", bold: false}
 

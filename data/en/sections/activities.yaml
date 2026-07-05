@@ -1,0 +1,33 @@
+# section information
+section:
+  name: Voluntary Activities and Memberships
+  id: activities
+  # Not wired into any Hugo template yet - this data is currently CV-only,
+  # consumed by cv/generate/render_cv.py. Flip to `true` if a matching
+  # website section template is built later.
+  enable: false
+  weight: 5
+  showOnNavbar: false
+
+activities:
+- name: University of Western Macedonia
+  url: "https://uowm.gr"
+  role: Author of educational material
+  timeframe: "Mar 2016 - 2018"
+  cv:
+    logo: uowm
+    logoOffset: "-1.1cm"
+    logoWidth: 0.6
+  bullets:
+  - "Author of original education material for the course \"Network Design\": [network-design-labs](https://github.com/cdalamagkas/network-design-labs)"
+  - "Curriculum includes Cisco and Mikrotik routing and switching."
+
+- name: Institute of Electrical and Electronics Engineers
+  url: "https://www.ieee.org/"
+  role: IEEE Member
+  timeframe: "Sept 2013 -- Now"
+  cv:
+    logo: ieee
+    logoOffset: "-0.5cm"
+    logoWidth: 0.6
+  bullets: []

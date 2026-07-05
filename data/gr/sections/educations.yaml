@@ -1,0 +1,31 @@
+# Greek-language mirror of data/en/sections/educations.yaml, CV-only.
+# Shape matches the English file exactly (timeframe at the top level, not
+# nested under cv:) so the generator can use the same field paths for
+# both languages.
+degrees:
+- name: Δημοκριτειο Πανεπιστημιο Θρακης
+  timeframe: "Δεκ. 2023 - Τωρα"
+  institution:
+    name: Δημοκριτειο Πανεπιστημιο Θρακης
+    url: "https://cs.duth.gr/"
+  cv:
+    title: "Υπ. Διδακτορας, Τμημα Επιστημης Υπολογιστων"
+    logo: duth
+    logoOffset: "-0.6cm"
+    logoWidth: 0.6
+    bullets:
+    - "Τεχνικές Προγραμματισμού Δικτύων για την Ενορχήστρωση και Προστασία του Βιομηχανικού Διαδικτύου των Πραγμάτων."
+
+- name: Πανεπιστημιο Δυτικης Μακεδονιας
+  timeframe: "2012 -- 2017"
+  institution:
+    name: Πανεπιστημιο Δυτικης Μακεδονιας
+    url: "http://ece.uowm.gr"
+  cv:
+    title: "Διπλωμα (Πενταετους φοιτησης), Πρ. Τμημα Μηχανικων Πληροφορικης και Τηλεπικοινωνιων"
+    logo: uowm
+    logoOffset: "-1.25cm"
+    logoWidth: 0.6
+    bullets:
+    - "Θεωρία παιγνίων στα δίκτυα XG-PON: [dspace.uowm.gr](https://dspace.uowm.gr/xmlui/handle/123456789/835)."
+    - "Βαθμός αποφοίτησης: 8.2/10."
