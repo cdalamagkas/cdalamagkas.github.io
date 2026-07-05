@@ -1,0 +1,111 @@
+name: Build CV and deploy site to Github Pages
+
+# run when a commit is pushed to "source" branch
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - source
+
+jobs:
+  # Render cv-en.tex/cv-gr.tex from data/en/ and data/gr/.
+  generate-tex:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Install generator dependencies
+      run: pip install -r cv/generate/requirements.txt
+
+    - name: Render cv-en.tex and cv-gr.tex
+      run: |
+        python cv/generate/render_cv.py --lang en --out cv/cv-en.tex
+        python cv/generate/render_cv.py --lang gr --out cv/cv-gr.tex
+
+    - uses: actions/upload-artifact@v4
+      with:
+        name: cv-tex-sources
+        path: |
+          cv/cv-en.tex
+          cv/cv-gr.tex
+
+  # Compile the rendered .tex into optimized PDFs, using the same prebuilt
+  # LaTeX image the standalone cv repo's CI used to use.
+  compile-pdf:
+    needs: generate-tex
+    runs-on: ubuntu-latest
+    container: cdal/dockerimagelatex:latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - uses: actions/download-artifact@v4
+      with:
+        name: cv-tex-sources
+        path: cv/
+
+    - name: Compile and optimize PDFs
+      working-directory: cv
+      run: |
+        xelatex -interaction=nonstopmode cv-gr.tex
+        pdflatex -interaction=nonstopmode cv-en.tex
+        gs -sDEVICE=pdfwrite -dSAFER -dPDFSETTINGS=/ebook -dColorImageResolution=260 -dPrinted=false -dNOPAUSE -dBATCH -dFastWebView=true -sOutputFile=cdalamagkas-cv-en.pdf cv-en.pdf
+        gs -sDEVICE=pdfwrite -dSAFER -dPDFSETTINGS=/ebook -dColorImageResolution=260 -dPrinted=false -dNOPAUSE -dBATCH -dFastWebView=true -sOutputFile=cdalamagkas-cv-gr.pdf cv-gr.pdf
+
+    - uses: actions/upload-artifact@v4
+      with:
+        name: cv-pdfs
+        path: |
+          cv/cdalamagkas-cv-en.pdf
+          cv/cdalamagkas-cv-gr.pdf
+
+  # Build the Hugo site (with the compiled PDFs dropped into static/files/
+  # beforehand, so they're published alongside everything else) and deploy.
+  build-deploy:
+    needs: compile-pdf
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - uses: actions/download-artifact@v4
+      with:
+        name: cv-pdfs
+        path: static/files/
+
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v3
+      with:
+        hugo-version: 'latest'
+        extended: true
+
+    - name: Update Hugo Modules
+      run: hugo mod tidy
+
+    - name: Setup Node
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
+
+    - name: Install node modules
+      run: |
+        hugo mod npm pack
+        npm install
+
+    - name: Fix vulnerabilities in the npm packages
+      run: npm audit fix --force
+
+    - name: Build Hugo
+      run: hugo --minify
+
+    # push the generated content into the `main` branch.
+    - name: Deploy
+      if: github.ref == 'refs/heads/source'
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_branch: main
+        publish_dir: ./public
+        cname: cdalamagkas.gr
