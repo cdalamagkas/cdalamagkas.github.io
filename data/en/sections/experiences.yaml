@@ -62,10 +62,9 @@ experiences:
     end: Nov 2025
     # give some points about what was your responsibilities at the company.
     responsibilities:
-    - Researcher for European research programmes ([SPEAR H2020](https://www.spear2020.eu), [SDN-microSENSE H2020](https://www.sdnmicrosense.eu), [TERMINET H2020](https://www.terminet-h2020.eu), [ELECTRON H2020](https://www.electron-project.eu),  [Jaunty Erasmus+](https://erasmus-plus.ec.europa.eu/projects/search/details/2020-1-BG01-KA203-079237), [AI4CYBER HE](https://ai4cyber.eu/), [DYNABIC HE](https://dynabic.eu/), [EV4EU HE](https://ev4eu.eu/))
+    - Researcher for European research programmes ([SPEAR H2020](https://www.spear2020.eu), [SDN-microSENSE H2020](https://www.sdnmicrosense.eu), [TERMINET H2020](https://www.terminet-h2020.eu), [ELECTRON H2020](https://www.electron-project.eu),  [Jaunty Erasmus+](https://erasmus-plus.ec.europa.eu/projects/search/details/2020-1-BG01-KA203-079237), [AI4CYBER HE](https://ai4cyber.eu/), [DYNABIC HE](https://dynabic.eu/), [PHOENI2X HE](https://phoeni2x.eu/), [EV4EU HE](https://ev4eu.eu/)).
     - Cyber Security & Software-Defined Networking on Smart Grids, Next-Generation IoT.
-    - Proposal writing in the IoT and cybersecurity domains (including [TERMINET H2020](https://www.terminet-h2020.eu), [ELECTRON H2020](https://www.electron-project.eu), [Jaunty Erasmus+](https://www.jaunty.eu)).
-    - Design, implementation, and administration of the Industrial Internet of Things (IIoT) of PPC Inspectra.
+    - Design, implementation, and administration of the Industrial Internet of Things (IIoT) Laboratory of PPC Inspectra.
     - Design, deployment and configuration of industrial networks (SCADA, PLCs, smart meters, EV chargers).
     - Software Development & Project Management
 
@@ -103,11 +102,4 @@ experiences:
     start: Oct 2018
     end: Jun 2019
     responsibilities:
-    - Computer Networks
-    - Network Security
-    - Mobile Networks
-    - Operating Systems
-    - Data Communications
-    - Network Administration
-    - Object-Oriented Programming (C++)
-    - Telecommunications
+    - "Instructor for the following courses: Computer Networks, Network Security, Mobile Networks, Operating Systems, Data Communications, Network Administration, Object-Oriented Programming (C++), Telecommunications"

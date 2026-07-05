@@ -93,7 +93,7 @@ params:
   # defaults to enabled, which is why disabling it here previously had no
   # effect on the live site.
   footer:
-    enable: false
+    enable: true
     # Provide newsletter configuration. This feature hasn't been implemented yet.
     # Currently, you can just hide it from the footer.
     newsletter:
