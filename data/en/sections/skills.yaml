@@ -10,12 +10,15 @@ section:
 
 # Your Skills.
 # Give a summary of you each skill in the summary section.
+# `logo` is an image path resolved via Hugo Pipes, relative to the assets/
+# directory (no leading slash) - the toha theme's skill card only treats
+# `icon` as a Font Awesome CSS class, not an image path.
 # `cv:` is a CV-only block consumed by cv/generate/render_cv.py, rendering
 # this skill as one row of the CV's skills table (`label` overrides the row
 # heading, falling back to `name`; `bold` matches the current CV's emphasis).
 skills:
 - name: Computer Networking and SDN
-  icon: "/images/sections/skills/networking.svg"
+  logo: "images/sections/skills/networking.svg"
   summary: "Certified under the CCNA programme (2019). Cisco IOS, Open vSwitch, ArubaOS-Switch, OpenFlow, Python Ryu."
   cv:
     label: "Computer Networking"
@@ -27,7 +30,7 @@ skills:
     - {text: "Python Ryu", bold: true}
 
 - name: Programming
-  icon: "/images/sections/skills/dev.svg"
+  logo: "images/sections/skills/dev.svg"
   summary: "Python, JavaScript, Django, MATLAB, Java, C/C++"
   cv:
     items:
@@ -39,7 +42,7 @@ skills:
     - {text: "C/C++", bold: false}
 
 - name: Virtualization
-  icon: "/images/sections/skills/linux.png"
+  logo: "images/sections/skills/linux.png"
   summary: "Proxmox VE, XCP-ng, VMware Workstation."
   cv:
     items:
@@ -48,7 +51,7 @@ skills:
     - {text: "VMware Workstation", bold: false}
 
 - name: DevOps
-  icon: "/images/sections/skills/git.png"
+  logo: "images/sections/skills/git.png"
   summary: "Docker, GitLab CI/CD, GitHub Actions."
   cv:
     items:
@@ -57,7 +60,7 @@ skills:
     - {text: "GitHub Actions", bold: true}
 
 - name: Cybersecurity
-  icon: "/images/sections/skills/cybersecurity.png"
+  logo: "images/sections/skills/cybersecurity.svg"
   summary: "pfSense, OpenVPN, Python Scapy, Wazuh, OIDC, PKI."
   cv:
     items:
@@ -69,7 +72,7 @@ skills:
     - {text: "PKI", bold: false}
 
 - name: Industrial IoT
-  icon: "/images/sections/skills/iot.svg"
+  logo: "images/sections/skills/iot.svg"
   summary: "Modbus TCP, OCPP 1.6-J, MQTT, DLMS/COSEM."
   cv:
     items:
@@ -79,7 +82,7 @@ skills:
     - {text: "DLMS/COSEM", bold: false}
 
 - name: Telecommunications
-  icon: "/images/sections/skills/cloud.png"
+  logo: "images/sections/skills/cloud.png"
   summary: "ITU-T PONs, Simulation (OMNeT++, GNS3)."
   cv:
     items:
@@ -87,7 +90,7 @@ skills:
     - {text: "Simulation (OMNeT++, GNS3)", bold: false}
 
 - name: Miscellaneous
-  icon: "/images/sections/skills/cloud.png"
+  logo: "images/sections/skills/cloud.png"
   summary: "Troubleshooting, Horizon Europe Project Management, Office Suite, LaTeX."
   cv:
     items:
@@ -97,7 +100,7 @@ skills:
     - {text: "LaTeX", bold: false}
 
 - name: Languages
-  icon: "/images/sections/skills/cloud.png"
+  logo: "images/sections/skills/cloud.png"
   summary: "Greek (native), English (C2), German (C1)."
   cv:
     items:
