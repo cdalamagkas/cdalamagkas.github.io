@@ -1,0 +1,111 @@
+\BLOCK{if lang == "gr"}
+%!TEX TS-program = xelatex
+\documentclass{mycv}
+
+\usepackage{xltxtra,xgreek,fontspec}
+\setmainfont{Times New Roman}
+\usepackage[greek]{datetime2}
+\renewcommand{\today}{\ifcase\month\or%
+	Ιανουάριος\or Φεβρουάριος\or Μάρτιος\or%
+	Απρίλιος\or Μάιος\or Ιούνιος\or Ιούλιος%
+	\or Αύγουστος\or Σεπτέμβριος\or%
+	Οκτώβριος\or Νοέμβριος\or%
+	Δεκέμβριος\fi\ \number \year}
+\BLOCK{else}
+%!TEX TS-program = pdflatex
+\documentclass{mycv}
+\BLOCK{endif}
+
+\hypersetup{%
+  pdftitle={\VAR{author.name|tex} - \VAR{labels.doc_subject|tex}},
+  pdfauthor={\VAR{author.name|tex}},
+  pdfsubject={\VAR{labels.doc_subject|tex}},
+  pdfkeywords={\VAR{author.name|tex}}
+}
+
+\begin{document}
+	\thispagestyle{plain}
+
+	\begin{center}
+	\name{\VAR{author.name|tex}}{\VAR{about.designation|tex}}{\VAR{about.cv.titleSecondary|tex}}
+	\contact{\VAR{contact.mobile}}{\VAR{contact.email}}{\VAR{contact.homepage}}{\VAR{contact.linkedin}}{\VAR{contact.github}}{\VAR{contact.orcid}}
+	\textbf{\VAR{labels.location}}: \VAR{about.location|tex}
+	\end{center}
+
+	\section{\VAR{labels.section_education}}
+	\BLOCK{for entry in education_entries}
+	\begin{EntryDatedLogo}{\VAR{entry.institution.name|tex}}{\VAR{entry.institution.url}}{\VAR{entry.timeframe|tex}}{\VAR{entry.cv.title|tex}}{\VAR{entry.cv.logoOffset}}{\VAR{entry.cv.logo}}{\VAR{entry.cv.logoWidth}}
+	\BLOCK{set bullets = entry.cv.get('bullets', [])}
+	\BLOCK{if bullets}
+		\begin{Itemize}
+		\BLOCK{for bullet in bullets}
+			\item \VAR{bullet|md}
+		\BLOCK{endfor}
+		\end{Itemize}
+	\BLOCK{endif}
+	\end{EntryDatedLogo}
+	\BLOCK{if not loop.last}
+
+	\vspace*{0.5cm}
+
+	\BLOCK{endif}
+	\BLOCK{endfor}
+
+	\section{\VAR{labels.section_experience}}
+	\BLOCK{for entry in experience_entries}
+	\begin{EntryDatedLogo}{\VAR{entry.company.name|tex}}{\VAR{entry.company.url}}{\VAR{entry.dates|tex}}{\VAR{entry.position.designation|tex}}{\VAR{entry.company.cv.logoOffset}}{\VAR{entry.company.cv.logo}}{\VAR{entry.company.cv.logoWidth}}
+	\BLOCK{set responsibilities = entry.position.get('responsibilities', [])}
+	\BLOCK{if responsibilities}
+		\begin{Itemize}
+		\BLOCK{for item in responsibilities}
+			\item \VAR{item|md}
+		\BLOCK{endfor}
+		\end{Itemize}
+	\BLOCK{endif}
+	\end{EntryDatedLogo}
+	\BLOCK{if not loop.last}
+
+	\vspace*{0.5cm}
+
+	\BLOCK{endif}
+	\BLOCK{endfor}
+
+	\section{\VAR{labels.section_certifications}}
+	\BLOCK{for entry in certification_entries}
+	\begin{EntryDatedLogo}{\VAR{entry.name|tex}}{\VAR{entry.url}}{\scshape{\VAR{entry.date|tex}}}{}{\VAR{entry.cv.logoOffset}}{\VAR{entry.cv.logo}}{\VAR{entry.cv.logoWidth}}
+	\end{EntryDatedLogo}
+	\BLOCK{if not loop.last}
+
+	\vspace*{0.5cm}
+
+	\BLOCK{endif}
+	\BLOCK{endfor}
+
+	\section{\VAR{labels.section_skills}}
+	\begin{tabular}{m{4.5cm} m{13cm}}\renewcommand{\arraystretch}{2}
+	\BLOCK{for row in skill_rows}
+		\textbf{\VAR{row.label|tex}} & \BLOCK{for item in row.terms}\BLOCK{if item.bold}\textbf{\VAR{item.text|tex}}\BLOCK{else}\VAR{item.text|tex}\BLOCK{endif}\BLOCK{if not loop.last}, \BLOCK{endif}\BLOCK{endfor}.\\
+	\BLOCK{endfor}
+	\end{tabular}
+
+	\section{\VAR{labels.section_activities}}
+	\vspace*{0.125cm}
+	\BLOCK{for entry in activity_entries}
+	\begin{EntryDatedLogo}{\VAR{entry.name|tex}}{\VAR{entry.url}}{\VAR{entry.timeframe|tex}}{\VAR{entry.role|tex}}{\VAR{entry.cv.logoOffset}}{\VAR{entry.cv.logo}}{\VAR{entry.cv.logoWidth}}
+	\BLOCK{set bullets = entry.get('bullets', [])}
+	\BLOCK{if bullets}
+		\begin{Itemize}
+		\BLOCK{for bullet in bullets}
+			\item \VAR{bullet|md}
+		\BLOCK{endfor}
+		\end{Itemize}
+	\BLOCK{endif}
+	\end{EntryDatedLogo}
+	\BLOCK{if not loop.last}
+
+	\vspace*{0.5cm}
+
+	\BLOCK{endif}
+	\BLOCK{endfor}
+
+\end{document}

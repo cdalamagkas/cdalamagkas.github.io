@@ -1,0 +1,73 @@
+# Greek-language mirror of data/en/sections/skills.yaml, CV-only.
+skills:
+- name: Δίκτυα Υπολογιστών
+  cv:
+    items:
+    - {text: "Cisco IOS", bold: true}
+    - {text: "Open vSwitch", bold: true}
+    - {text: "ArubaOS-Switch", bold: true}
+    - {text: "OpenFlow", bold: true}
+    - {text: "Python Ryu", bold: true}
+
+- name: Προγραμματισμός
+  cv:
+    items:
+    - {text: "Python", bold: true}
+    - {text: "JavaScript", bold: true}
+    - {text: "Django", bold: true}
+    - {text: "MATLAB", bold: true}
+    - {text: "Java", bold: false}
+    - {text: "C/C++", bold: false}
+
+- name: Εικονικοποίηση
+  cv:
+    items:
+    - {text: "Proxmox VE", bold: true}
+    - {text: "XCP-ng", bold: false}
+    - {text: "VMware Workstation", bold: false}
+
+- name: DevOps
+  cv:
+    items:
+    - {text: "Docker", bold: true}
+    - {text: "GitLab CI/CD", bold: true}
+    - {text: "GitHub Actions", bold: true}
+
+- name: Κυβερνοασφάλεια
+  cv:
+    items:
+    - {text: "pfSense", bold: true}
+    - {text: "OpenVPN", bold: true}
+    - {text: "Python Scapy", bold: true}
+    - {text: "Wazuh", bold: true}
+    - {text: "OIDC", bold: false}
+    - {text: "PKI", bold: false}
+
+- name: Industrial IoT
+  cv:
+    items:
+    - {text: "Modbus TCP", bold: true}
+    - {text: "OCPP 1.6-J", bold: true}
+    - {text: "MQTT", bold: true}
+    - {text: "DLMS/COSEM", bold: false}
+
+- name: Τηλεπικοινωνίες
+  cv:
+    items:
+    - {text: "ITU-T PONs", bold: false}
+    - {text: "Simulation (OMNeT++, GNS3)", bold: false}
+
+- name: Διάφορα
+  cv:
+    items:
+    - {text: "Αντιμετώπιση προβλημάτων", bold: false}
+    - {text: "Διαχείριση έργων Horizon Europe", bold: false}
+    - {text: "Σουΐτα Office", bold: false}
+    - {text: "LaTeX", bold: false}
+
+- name: Γλώσσες
+  cv:
+    items:
+    - {text: "Ελληνικά (εγγενώς)", bold: false}
+    - {text: "Αγγλικά (C2)", bold: false}
+    - {text: "Γερμανικά (C1)", bold: false}

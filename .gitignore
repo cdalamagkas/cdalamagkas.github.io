@@ -1,2 +1,6 @@
 .idea
 node_modules
+
+# populated at build time from the compile-pdf job's artifact - see
+# .github/workflows/build-and-deploy.yaml
+/static/files/

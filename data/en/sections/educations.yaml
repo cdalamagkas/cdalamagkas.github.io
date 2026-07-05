@@ -27,6 +27,21 @@ degrees:
 #    url: "#"
 #  - title: Nullam vitae orci tincidunt purus viverra pulvinar.
 #    url: "#"
+- name: PhD Candidate, Dept. of Computer Science
+  icon: fa-graduation-cap
+  timeframe: 2023 - Now
+  institution:
+    name: Democritus University of Thrace
+    url: "https://cs.duth.gr/"
+  # CV-only fields, consumed by cv/generate/render_cv.py
+  cv:
+    title: "PhD Candidate, Dept. of Computer Science"
+    logo: duth
+    logoOffset: "-0.6cm"
+    logoWidth: 0.6
+    bullets:
+    - "Software-Defined Network Techniques for Orchestrating and Protecting Industrial Internet of Things"
+
 - name: Cisco Certified Network Associate (CCNA)
   icon: fa-graduation-cap
   timeframe: 2017-2018
@@ -37,7 +52,7 @@ degrees:
     scale: CGPA
     achieved: 92
     outOf: 100
-    
+
 - name: M.Eng. in Informatics and Telecommunications Engineering
   icon: fa-graduation-cap
   timeframe: 2012-2017
@@ -54,3 +69,12 @@ degrees:
   extracurricularActivities: #(optional)
   - Teching Fellow for Computer Networks, Computer and Network Security, Network Design, Event-driven simulation.
   - Video editing for the course "Parallel and Distributed Systems" using MeGUI and Sony Vegas Pro.
+  # CV-only fields, consumed by cv/generate/render_cv.py
+  cv:
+    title: "M.Eng. (5 years of study), Dept. of Informatics and Telecommunications Engineering"
+    logo: uowm
+    logoOffset: "-1.25cm"
+    logoWidth: 0.6
+    bullets:
+    - "Game Theory on XG-PON networks: [dspace.uowm.gr](https://dspace.uowm.gr/xmlui/handle/123456789/835)."
+    - "Graduation Grade: 8.2/10."

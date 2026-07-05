@@ -8,14 +8,19 @@ section:
   template: sections/about.html
 
 # your designation
-designation: Freelance Researcher
+designation: Cybersecurity Researcher
 # your company information
 #company:
 #  name: Freelance Researcher.
 #  url: "https://www.example.com"
 
+# CV-only fields, consumed by cv/generate/render_cv.py, ignored by the website
+location: "Thessaloniki, Greece"
+cv:
+  titleSecondary: "Network Engineer (CCNA)"
+
 # your resume. this file path should be relative to you "static" directory
-resume: "cv.html"
+resume: "files/cdalamagkas-cv-en.pdf"
 
 # a summary about you
 summary: 'I am a researcher and ICT engineer with experience in Horizon Europe research programes'
@@ -44,3 +49,11 @@ badges:
   name: CCNA
   url: "https://www.credly.com/org/cisco/badge/ccna"
   badge: "images/ccna_600.png"
+  date: "Jul 2019"
+  # presence of `cv:` includes this badge in the generated CV's
+  # "Professional Certifications" section
+  cv:
+    name: "Cisco Certified Network Associate (CCNA)"
+    logo: cisco
+    logoOffset: "-0.75cm"
+    logoWidth: 0.6

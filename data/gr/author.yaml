@@ -1,0 +1,10 @@
+# Greek-language mirror of data/en/author.yaml, consumed only by
+# cv/generate/render_cv.py (--lang gr). Not wired into Hugo's `languages:`
+# config - there is no Greek website, only a Greek CV.
+name: "Χρήστος Δαλαμάγκας"
+nickname: "Χρήστος"
+
+# contact details are the same regardless of language
+contactInfo:
+  email: "me@cdalamagkas.gr"
+  phone: "+30 6983160295"
