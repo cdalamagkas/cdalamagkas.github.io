@@ -46,7 +46,7 @@
 	\end{EntryDatedLogo}
 	\BLOCK{if not loop.last}
 
-	\vspace*{0.5cm}
+	\vspace{0.5cm}
 
 	\BLOCK{endif}
 	\BLOCK{endfor}
@@ -65,7 +65,7 @@
 	\end{EntryDatedLogo}
 	\BLOCK{if not loop.last}
 
-	\vspace*{0.5cm}
+	\vspace{0.5cm}
 
 	\BLOCK{endif}
 	\BLOCK{endfor}
@@ -76,7 +76,7 @@
 	\end{EntryDatedLogo}
 	\BLOCK{if not loop.last}
 
-	\vspace*{0.5cm}
+	\vspace{0.5cm}
 
 	\BLOCK{endif}
 	\BLOCK{endfor}
@@ -89,7 +89,7 @@
 	\end{tabular}
 
 	\section{\VAR{labels.section_activities}}
-	\vspace*{0.125cm}
+	\vspace{0.125cm}
 	\BLOCK{for entry in activity_entries}
 	\begin{EntryDatedLogo}{\VAR{entry.name|tex}}{\VAR{entry.url}}{\VAR{entry.timeframe|tex}}{\VAR{entry.role|tex}}{\VAR{entry.cv.logoOffset}}{\VAR{entry.cv.logo}}{\VAR{entry.cv.logoWidth}}
 	\BLOCK{set bullets = entry.get('bullets', [])}
@@ -103,7 +103,7 @@
 	\end{EntryDatedLogo}
 	\BLOCK{if not loop.last}
 
-	\vspace*{0.5cm}
+	\vspace{0.5cm}
 
 	\BLOCK{endif}
 	\BLOCK{endfor}
