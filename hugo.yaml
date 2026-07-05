@@ -77,12 +77,17 @@ params:
     embedpdf:
       enable: true
 
-    # Provide footer configuration.
-    footer:
+  # Provide footer configuration. Unlike every other feature above, the
+  # toha theme's footer.html partial reads this as a top-level `footer`
+  # param, NOT nested under `features` - keeping it under `features` here
+  # (as most docs/examples imply) means it's silently ignored and always
+  # defaults to enabled, which is why disabling it here previously had no
+  # effect on the live site.
+  footer:
+    enable: false
+    # Provide newsletter configuration. This feature hasn't been implemented yet.
+    # Currently, you can just hide it from the footer.
+    newsletter:
       enable: false
-      # Provide newsletter configuration. This feature hasn't been implemented yet.
-      # Currently, you can just hide it from the footer.
-      newsletter:
-        enable: false
 
 
