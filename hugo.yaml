@@ -13,6 +13,8 @@ module:
     target: static/files
   - source: ./node_modules/katex/dist/fonts
     target: static/fonts
+  - source: ./static
+    target: static
 
 # Manage languages
 # For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
@@ -71,7 +73,9 @@ params:
     # specify whether you want to show Table of Contents in reading page
     toc:
       enable: false
-    
+
+    embedpdf:
+      enable: true
 
     # Provide footer configuration.
     footer:
