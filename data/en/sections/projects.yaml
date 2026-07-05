@@ -3,7 +3,9 @@ section:
   name: Projects and Publications
   id: projects
   enable: true
-  weight: 4
+  # was 4, tied with educations.yaml's weight - see hugo.yaml's
+  # topNavbar.maxVisibleSections comment for why that tie was a problem
+  weight: 5
   showOnNavbar: true
   # Can optionally hide the title in sections
   # hideTitle: true
