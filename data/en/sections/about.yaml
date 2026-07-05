@@ -15,7 +15,7 @@ designation: Cybersecurity Researcher
 #  url: "https://www.example.com"
 
 # CV-only fields, consumed by cv/generate/render_cv.py, ignored by the website
-location: "Thessaloniki, Greece"
+location: "Sofia, Bulgaria"
 cv:
   titleSecondary: "Network Engineer (CCNA)"
 

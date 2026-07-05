@@ -77,12 +77,26 @@ params:
     embedpdf:
       enable: true
 
-    # Provide footer configuration.
-    footer:
+  # Number of sections shown directly in the top navbar before the rest
+  # overflow into a "More" dropdown (default is 5, but that only leaves
+  # room for 4 sections since the theme's counter reserves a slot for
+  # "Home"). We have 5 navbar sections (About, Technical Skills,
+  # Experiences, Education, Projects and Publications), so raise this to
+  # fit all of them directly with nothing relegated to "More".
+  topNavbar:
+    maxVisibleSections: 6
+
+  # Provide footer configuration. Unlike every other feature above, the
+  # toha theme's footer.html partial reads this as a top-level `footer`
+  # param, NOT nested under `features` - keeping it under `features` here
+  # (as most docs/examples imply) means it's silently ignored and always
+  # defaults to enabled, which is why disabling it here previously had no
+  # effect on the live site.
+  footer:
+    enable: false
+    # Provide newsletter configuration. This feature hasn't been implemented yet.
+    # Currently, you can just hide it from the footer.
+    newsletter:
       enable: false
-      # Provide newsletter configuration. This feature hasn't been implemented yet.
-      # Currently, you can just hide it from the footer.
-      newsletter:
-        enable: false
 
 

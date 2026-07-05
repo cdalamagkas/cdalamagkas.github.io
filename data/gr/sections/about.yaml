@@ -5,7 +5,7 @@
 # combination renders accented uppercase oddly), while accented text
 # elsewhere (bullets, skills table) is fine. Match that convention here.
 designation: Κυβερνοασφαλεια
-location: "Θεσσαλονίκη, Ελλάδα"
+location: "Σόφια, Βουλγαρία"
 cv:
   titleSecondary: "Μηχανικος Δικτυων (CCNA)"
 

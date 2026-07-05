@@ -10,13 +10,16 @@ section:
 
 # Your Skills.
 # Give a summary of you each skill in the summary section.
+# `logo` is an image path resolved via Hugo Pipes, relative to the assets/
+# directory (no leading slash) - the toha theme's skill card only treats
+# `icon` as a Font Awesome CSS class, not an image path.
 # `cv:` is a CV-only block consumed by cv/generate/render_cv.py, rendering
 # this skill as one row of the CV's skills table (`label` overrides the row
 # heading, falling back to `name`; `bold` matches the current CV's emphasis).
 skills:
 - name: Computer Networking and SDN
-  icon: "/images/sections/skills/networking.svg"
-  summary: "Certified under the CCNA programme (2019), Python Scapy, ArubaOS-Switch, OpenFlow 1.3, Ryu, GNS3."
+  logo: "images/sections/skills/networking.svg"
+  summary: "Cisco IOS, Open vSwitch, ArubaOS-Switch, OpenFlow, Python Ryu."
   cv:
     label: "Computer Networking"
     items:
@@ -27,8 +30,8 @@ skills:
     - {text: "Python Ryu", bold: true}
 
 - name: Programming
-  icon: "/images/sections/skills/dev.svg"
-  summary: "Python, JavaScript, Django, Java, MATLAB, C/C++"
+  logo: "images/sections/skills/dev.svg"
+  summary: "Python, JavaScript, Django, MATLAB, Java, C/C++"
   cv:
     items:
     - {text: "Python", bold: true}
@@ -39,8 +42,8 @@ skills:
     - {text: "C/C++", bold: false}
 
 - name: Virtualization
-  icon: "/images/sections/skills/linux.png"
-  summary: "Proxmox VE, KVM, XCP-ng, VMware Workstation, Virtualbox."
+  logo: "images/sections/skills/linux.png"
+  summary: "Proxmox VE, XCP-ng, VMware Workstation."
   cv:
     items:
     - {text: "Proxmox VE", bold: true}
@@ -48,8 +51,8 @@ skills:
     - {text: "VMware Workstation", bold: false}
 
 - name: DevOps
-  icon: "/images/sections/skills/git.png"
-  summary: "Docker, Dockerfiles, GitLab CI/CD pipelines for Docker apps, docker-compose."
+  logo: "images/sections/skills/git.png"
+  summary: "Docker, GitLab CI/CD, GitHub Actions."
   cv:
     items:
     - {text: "Docker", bold: true}
@@ -57,8 +60,8 @@ skills:
     - {text: "GitHub Actions", bold: true}
 
 - name: Cybersecurity
-  icon: "/images/sections/skills/cybersecurity.png"
-  summary: "pfSense, PKI, OpenVPN, ettercap, Python Scapy, LDAP, OIDC"
+  logo: "images/sections/skills/cybersecurity.svg"
+  summary: "pfSense, OpenVPN, Python Scapy, Wazuh, OIDC, PKI."
   cv:
     items:
     - {text: "pfSense", bold: true}
@@ -69,8 +72,8 @@ skills:
     - {text: "PKI", bold: false}
 
 - name: Industrial IoT
-  icon: "/images/sections/skills/iot.svg"
-  summary: "Modbus TCP, MQTT, Raspberry Pi 4, I2C, DLMS/COSEM, OCPP 1.6-J."
+  logo: "images/sections/skills/iot.svg"
+  summary: "Modbus TCP, OCPP 1.6-J, MQTT, DLMS/COSEM."
   cv:
     items:
     - {text: "Modbus TCP", bold: true}
@@ -79,16 +82,16 @@ skills:
     - {text: "DLMS/COSEM", bold: false}
 
 - name: Telecommunications
-  icon: "/images/sections/skills/cloud.png"
-  summary: "ITU-T PONs, OMNeT++."
+  logo: "images/sections/skills/cloud.png"
+  summary: "ITU-T PONs, Simulation (OMNeT++, GNS3)."
   cv:
     items:
     - {text: "ITU-T PONs", bold: false}
     - {text: "Simulation (OMNeT++, GNS3)", bold: false}
 
 - name: Miscellaneous
-  icon: "/images/sections/skills/cloud.png"
-  summary: "Troubleshooting, Horizon 2020 Project Management, Office Suite, LATEX"
+  logo: "images/sections/skills/cloud.png"
+  summary: "Troubleshooting, Horizon Europe Project Management, Office Suite, LaTeX."
   cv:
     items:
     - {text: "Troubleshooting", bold: false}
@@ -97,7 +100,7 @@ skills:
     - {text: "LaTeX", bold: false}
 
 - name: Languages
-  icon: "/images/sections/skills/cloud.png"
+  logo: "images/sections/skills/cloud.png"
   summary: "Greek (native), English (C2), German (C1)."
   cv:
     items:
