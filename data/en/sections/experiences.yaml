@@ -13,7 +13,8 @@ experiences:
 - company:
     name: K3Y Ltd.
     url: "https://k3ylabs.com/"
-    # TODO: fill in company location
+    location: Sofia, Bulgaria
+    overview: R&D and Cyber Security.
     cv:
       logo: k3y
       logoOffset: "-1.25cm"
@@ -23,11 +24,14 @@ experiences:
     start: Jan 2026
     responsibilities:
     - "Researcher for EU-funded programmes: [XTRUST-6G](https://cordis.europa.eu/project/id/101192749), [SALUS](https://cordis.europa.eu/project/id/101225719), [CASTOR](https://cordis.europa.eu/project/id/101167904), [ENFORCE](https://enforceproject.eu/), IRONPLAN EDF, [SECASSURED](https://cordis.europa.eu/project/id/101225858), [CIPHER](https://cipher-eu.com/)."
+    - "Product Manager & Developer: K3NetOrchestra, K3CyberRadar."
+    - "Research topics: Industrial IoT, Cybersecurity, Digitalisation."
 
 - company:
     name: Metamind Innovations P.C. (MINDS)
     url: "https://metamind.gr/"
-    # TODO: fill in company location
+    location: Thessaloniki, Greece
+    overview: MINDS is the first spin-off of the University of Western Macedonia.
     cv:
       logo: minds
       logoOffset: "-1.25cm"
@@ -45,8 +49,7 @@ experiences:
     name: Public Power Corporation S.A.
     url: "https://www.dei.gr"
     location: PPC Innovation Hub, Athens, Greece
-    # company overview
-    overview: PPC is the largest energy producer and energy retailer in Greece.
+    overview: PPC Group is the largest energy producer and energy retailer in Greece.
     cv:
       logo: dei
       # this entry has a long bullet list, needs more push-down than the
@@ -59,14 +62,12 @@ experiences:
     end: Nov 2025
     # give some points about what was your responsibilities at the company.
     responsibilities:
-    - Researcher for European research programmes ([SPEAR H2020](https://www.spear2020.eu), [SDN-microSENSE H2020](https://www.sdnmicrosense.eu), [TERMINET H2020](https://www.terminet-h2020.eu), [ELECTRON H2020](https://www.electron-project.eu),  [Jaunty Erasmus+](https://www.jaunty.eu), [AI4CYBER HE](https://ai4cyber.eu/), [DYNABIC HE](https://dynabic.eu/), [EV4EU HE](https://ev4eu.eu/))
-    - Security and privacy on smart grids, SDN technologies on smart grids, cybersecurity, next-generation IoT.
+    - Researcher for European research programmes ([SPEAR H2020](https://www.spear2020.eu), [SDN-microSENSE H2020](https://www.sdnmicrosense.eu), [TERMINET H2020](https://www.terminet-h2020.eu), [ELECTRON H2020](https://www.electron-project.eu),  [Jaunty Erasmus+](https://erasmus-plus.ec.europa.eu/projects/search/details/2020-1-BG01-KA203-079237), [AI4CYBER HE](https://ai4cyber.eu/), [DYNABIC HE](https://dynabic.eu/), [EV4EU HE](https://ev4eu.eu/))
+    - Cyber Security & Software-Defined Networking on Smart Grids, Next-Generation IoT.
     - Proposal writing in the IoT and cybersecurity domains (including [TERMINET H2020](https://www.terminet-h2020.eu), [ELECTRON H2020](https://www.electron-project.eu), [Jaunty Erasmus+](https://www.jaunty.eu)).
-    - Design, implementation, and administration of virtualized and SDN-enabled infrastructure.
-    - ICT infrastructure documentation.
+    - Design, implementation, and administration of the Industrial Internet of Things (IIoT) of PPC Inspectra.
     - Design, deployment and configuration of industrial networks (SCADA, PLCs, smart meters, EV chargers).
-    - Software development.
-    - Project management.
+    - Software Development & Project Management
 
 - company:
     name: University of Western Macedonia

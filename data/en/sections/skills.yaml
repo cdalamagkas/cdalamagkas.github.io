@@ -19,7 +19,7 @@ section:
 skills:
 - name: Computer Networking and SDN
   logo: "images/sections/skills/networking.svg"
-  summary: "Certified under the CCNA programme (2019). Cisco IOS, Open vSwitch, ArubaOS-Switch, OpenFlow, Python Ryu."
+  summary: "Cisco IOS, Open vSwitch, ArubaOS-Switch, OpenFlow, Python Ryu."
   cv:
     label: "Computer Networking"
     items:
