@@ -2,12 +2,12 @@
 section:
   name: Voluntary Activities and Memberships
   id: activities
-  # Not wired into any Hugo template yet - this data is currently CV-only,
+  # Not wired into any Hugo template - this data is currently CV-only,
   # consumed by cv/generate/render_cv.py. Flip to `true` if a matching
   # website section template is built later.
-  enable: true
+  enable: false
   weight: 5
-  showOnNavbar: true
+  showOnNavbar: false
 
 activities:
 - name: University of Western Macedonia
