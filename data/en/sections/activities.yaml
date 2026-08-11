@@ -5,9 +5,9 @@ section:
   # Not wired into any Hugo template yet - this data is currently CV-only,
   # consumed by cv/generate/render_cv.py. Flip to `true` if a matching
   # website section template is built later.
-  enable: false
+  enable: true
   weight: 5
-  showOnNavbar: false
+  showOnNavbar: true
 
 activities:
 - name: University of Western Macedonia
@@ -19,7 +19,7 @@ activities:
     logoOffset: "-1.1cm"
     logoWidth: 0.6
   bullets:
-  - "Author of original education material for the course \"Network Design\": [network-design-labs](https://github.com/cdalamagkas/network-design-labs)"
+  - "Author of original education material for the course \"Network Design\": [https://github.com/cdalamagkas/network-design-labs](https://github.com/cdalamagkas/network-design-labs)"
   - "Curriculum includes Cisco and Mikrotik routing and switching."
 
 - name: Institute of Electrical and Electronics Engineers

@@ -43,12 +43,11 @@ skills:
 
 - name: Virtualization
   logo: "images/sections/skills/linux.png"
-  summary: "Proxmox VE, XCP-ng, VMware Workstation."
+  summary: "Proxmox VE, XCP-ng."
   cv:
     items:
     - {text: "Proxmox VE", bold: true}
     - {text: "XCP-ng", bold: false}
-    - {text: "VMware Workstation", bold: false}
 
 - name: DevOps
   logo: "images/sections/skills/git.png"

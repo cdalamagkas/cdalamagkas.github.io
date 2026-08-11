@@ -24,7 +24,6 @@ skills:
     items:
     - {text: "Proxmox VE", bold: true}
     - {text: "XCP-ng", bold: false}
-    - {text: "VMware Workstation", bold: false}
 
 - name: DevOps
   cv:

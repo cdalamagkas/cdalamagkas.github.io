@@ -9,7 +9,7 @@ activities:
     logoOffset: "-1.1cm"
     logoWidth: 0.6
   bullets:
-  - "Συγγραφή πρωτότυπου εκπαιδευτικού υλικού για το μάθημα «Σχεδίαση Δικτύων»: [network-design-labs](https://github.com/cdalamagkas/network-design-labs)"
+  - "Συγγραφή πρωτότυπου εκπαιδευτικού υλικού για το μάθημα «Σχεδίαση Δικτύων»: [https://github.com/cdalamagkas/network-design-labs](https://github.com/cdalamagkas/network-design-labs)"
   - "Η ύλη περιλαμβάνει δρομολόγηση και μεταγωγή με συσκευές Cisco και Mikrotik."
 
 - name: Ινστιτουτο Ηλεκτρολογων και Ηλεκτρονικων Μηχανικων

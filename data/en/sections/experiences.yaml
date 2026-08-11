@@ -8,7 +8,6 @@ section:
   # Can optionally hide the title in sections
   # hideTitle: true 
 
-# Your experiences
 experiences:
 - company:
     name: K3Y Ltd.
@@ -17,15 +16,16 @@ experiences:
     overview: R&D and Cyber Security.
     cv:
       logo: k3y
-      logoOffset: "-1.25cm"
+      logoOffset: "-3.75cm"
       logoWidth: 0.6
   positions:
   - designation: Senior Network and Security Engineer
     start: Jan 2026
     responsibilities:
-    - "Researcher for EU-funded programmes: [XTRUST-6G](https://cordis.europa.eu/project/id/101192749), [SALUS](https://cordis.europa.eu/project/id/101225719), [CASTOR](https://cordis.europa.eu/project/id/101167904), [ENFORCE](https://enforceproject.eu/), IRONPLAN EDF, [SECASSURED](https://cordis.europa.eu/project/id/101225858), [CIPHER](https://cipher-eu.com/)."
-    - "Product Manager & Developer: K3NetOrchestra, K3CyberRadar."
-    - "Research topics: Industrial IoT, Cybersecurity, Digitalisation."
+    - "Researcher for EU-funded programmes: [XTRUST-6G](https://cordis.europa.eu/project/id/101192749), [SALUS](https://cordis.europa.eu/project/id/101225719), [CASTOR](https://cordis.europa.eu/project/id/101167904), [ENFORCE](https://enforceproject.eu/), [IRONPLAN EDF](https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/44181033/101224513/EDF), [SECASSURED](https://cordis.europa.eu/project/id/101225858), [CIPHER](https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/43152860/101249732/DIGITAL), [CIRCAT](https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/43152860/101249750/DIGITAL), [SecQdevOps](https://cordis.europa.eu/project/id/101225776)."
+    - "Product Manager & Developer for K3NetOrchestra: A security policy orchestrator enforcing zero-trust by leveraging OpenFlow and Kubernetes/Cilium."
+    - "Product Manager & Developer for K3CyberRadar: An AI-powered SIEM platform integrating threat detection and vulnerability management."
+    - "Research topics: Industrial IoT, Cybersecurity, Software Architecture & Development."
 
 - company:
     name: Metamind Innovations P.C. (MINDS)
@@ -34,27 +34,28 @@ experiences:
     overview: MINDS is the first spin-off of the University of Western Macedonia.
     cv:
       logo: minds
-      logoOffset: "-1.25cm"
+      logoOffset: "-3.5cm"
       logoWidth: 0.6
   positions:
   - designation: Associate Researcher
     start: Apr 2024
     end: Nov 2025
     responsibilities:
-    - "Researcher for EU-funded programmes: [NERO Digital Europe](https://metamind.gr/project/nero/)."
-    - "Product Manager & Developer: MINDS SDN Controller & Dashboard."
-    - "Research topics: Industrial IoT, Cybersecurity, Digitalisation."
+    - "Researcher for EU-funded programmes: [D-HYDROFLEX HE](https://cordis.europa.eu/project/id/101122357), [NERO Digital Europe](https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/43152860/101127411/DIGITAL)."
+    - "Product Manager & Developer for the MINDS SDN Controller & Dashboard: An OT SDN solution that leverages OpenFlow to introduce security policies on OT networks."
+    - "Product Manager & Developer for the MINDS Radar: A SIEM platform based on Wazuh, integrating custom AI-based OT detectors."
+    - "Research topics: Digitalisation and Cybersecurity on Hydro Power Plants."
 
 - company:
     name: Public Power Corporation S.A.
     url: "https://www.dei.gr"
-    location: PPC Innovation Hub, Athens, Greece
+    location: Athens, Greece
     overview: PPC Group is the largest energy producer and energy retailer in Greece.
     cv:
       logo: dei
       # this entry has a long bullet list, needs more push-down than the
       # usual -1.25cm to keep the logo from drifting away from the heading
-      logoOffset: "-3cm"
+      logoOffset: "-3.75cm"
       logoWidth: 0.6
   positions:
   - designation: Contractor / Researcher
@@ -62,28 +63,10 @@ experiences:
     end: Nov 2025
     # give some points about what was your responsibilities at the company.
     responsibilities:
-    - Researcher for European research programmes ([SPEAR H2020](https://www.spear2020.eu), [SDN-microSENSE H2020](https://www.sdnmicrosense.eu), [TERMINET H2020](https://www.terminet-h2020.eu), [ELECTRON H2020](https://www.electron-project.eu),  [Jaunty Erasmus+](https://erasmus-plus.ec.europa.eu/projects/search/details/2020-1-BG01-KA203-079237), [AI4CYBER HE](https://ai4cyber.eu/), [DYNABIC HE](https://dynabic.eu/), [PHOENI2X HE](https://phoeni2x.eu/), [EV4EU HE](https://ev4eu.eu/)).
-    - Cyber Security & Software-Defined Networking on Smart Grids, Next-Generation IoT.
-    - Design, implementation, and administration of the Industrial Internet of Things (IIoT) Laboratory of PPC Inspectra.
-    - Design, deployment and configuration of industrial networks (SCADA, PLCs, smart meters, EV chargers).
-    - Software Development & Project Management
-
-- company:
-    name: University of Western Macedonia
-    url: "https://ithaca.ece.uowm.com"
-    location: Kozani, Greece
-    cv:
-      logo: uowm
-      logoOffset: "-1.25cm"
-      logoWidth: 0.6
-  positions:
-  - designation: External Collaborator / Research Assistant
-    start: May 2018
-    # still active - don't provide end date. It will be replaced by "Present"
-    responsibilities:
-    - Research assistance and management for European research programmes.
-    - Proposal writing in the IoT and cybersecurity domains (including [TERMINET H2020](https://www.terminet-h2020.eu), [ELECTRON H2020](https://www.electron-project.eu), [Jaunty Erasmus+](https://www.jaunty.eu)).
-    - Software development.
+    - "Researcher for European research programmes ([SPEAR H2020](https://www.spear2020.eu), [SDN-microSENSE H2020](https://www.sdnmicrosense.eu), [TERMINET H2020](https://www.terminet-h2020.eu), [ELECTRON H2020](https://www.electron-project.eu),  [Jaunty Erasmus+](https://erasmus-plus.ec.europa.eu/projects/search/details/2020-1-BG01-KA203-079237), [AI4CYBER HE](https://ai4cyber.eu/), [DYNABIC HE](https://dynabic.eu/), [PHOENI2X HE](https://phoeni2x.eu/), [EV4EU HE](https://ev4eu.eu/))."
+    - "Software architect & developer of an OCPP 1.6/2.0.1 / OCPI charging station management system: [https://github.com/EV4EU/ov2xmp](https://github.com/EV4EU/ov2xmp)."
+    - "Conceptualisation, design, implementation, and administration of the Industrial Internet of Things (IIoT) Laboratory of [PPC Inspectra](https://www.ppcinspectra.com/)."
+    - "Design, deployment and configuration of industrial networks for pilot demonstrators (SCADA, PLCs, smart meters, EV chargers)."
 
 - company:
     name: IEK ALFA (IEK ΑΛΦΑ)
@@ -95,11 +78,12 @@ experiences:
       # script in `name` above without full Unicode/Greek font support
       name: "IEK ALFA (Vocational school)"
       logo: alfa
-      logoOffset: "-1cm"
+      logoOffset: "-1.75cm"
       logoWidth: 0.6
   positions:
   - designation: Teacher
     start: Oct 2018
     end: Jun 2019
     responsibilities:
-    - "Instructor for the following courses: Computer Networks, Network Security, Mobile Networks, Operating Systems, Data Communications, Network Administration, Object-Oriented Programming (C++), Telecommunications"
+    - "Instructor for the following courses: Computer Networks, Network Security, Mobile Networks, Operating Systems, Data Communications, Network Administration, Object-Oriented Programming (C++), Telecommunications."
+    - "Lectures available on GitHub: [https://github.com/cdalamagkas/cs-lectures-gr](https://github.com/cdalamagkas/cs-lectures-gr)"
